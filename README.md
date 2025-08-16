@@ -1,14 +1,99 @@
-# GisGreen.github.io
-lluislacan-website/
-│
-├── index.html
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lluis Lacán - Análisis Geoespacial</title>
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Estilos generales */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      padding: 1rem;
+    }
+
+    /* Encabezado */
+    header {
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    /* Navegación */
+    nav {
+      background: #2c3e50;
+      padding: 0.8rem;
+    }
+    nav .container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Secciones */
+    main h2 {
+      color: #2c3e50;
+      margin-top: 2rem;
+      border-left: 5px solid #2c3e50;
+      padding-left: 0.5rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin: 0.5rem 0;
+    }
+
+    /* Botón */
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background: #2c3e50;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #1abc9c;
+      transition: 0.3s;
+    }
+
+    /* Pie de página */
+    footer {
+      background: #34495e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
   <!-- Encabezado -->
@@ -74,9 +159,3 @@ lluislacan-website/
   </footer>
 </body>
 </html>
-
-├── css/
-│   └── style.css       → Estilos del sitio
-├── img/                → Carpeta para imágenes
-│   └── (tus imágenes aquí)
-└── js/                 → (opcional, para scripts futuros)
