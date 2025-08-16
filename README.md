@@ -4,23 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lluis Lacán – GeoAnalytics & Geomática</title>
+  <meta name="description" content="Lluis Lacán – Especialista en Geomática, Análisis Espacial e Innovación con IA.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #111;
+      font-family: 'Poppins', sans-serif;
+      background: #0e0e0e;
       color: #fff;
+      line-height: 1.6;
     }
 
-    .grid {
+    main {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto auto;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 0;
     }
 
     .grid-item {
       position: relative;
       overflow: hidden;
+      height: 300px;
     }
 
     .grid-item img {
@@ -29,36 +35,39 @@
       object-fit: cover;
       display: block;
       filter: brightness(70%);
-      transition: transform 0.5s ease;
+      transition: transform 0.6s ease, filter 0.4s ease;
     }
 
     .grid-item:hover img {
       transform: scale(1.1);
-      filter: brightness(60%);
+      filter: brightness(55%);
     }
 
     .label {
       position: absolute;
       bottom: 20px;
       left: 20px;
-      background: rgba(0,0,0,0.7);
-      padding: 10px 15px;
-      border-radius: 5px;
+      background: rgba(0,0,0,0.65);
+      padding: 10px 18px;
+      border-radius: 8px;
       color: cyan;
-      font-weight: bold;
+      font-weight: 600;
       font-size: 1.2rem;
+      letter-spacing: 0.5px;
     }
 
     footer {
       text-align: center;
-      background: #222;
+      background: #1a1a1a;
       padding: 2rem 1rem;
+      margin-top: 2rem;
     }
 
     footer h2 {
       margin: 0;
       font-size: 2rem;
       color: cyan;
+      font-weight: 600;
     }
 
     footer p {
@@ -71,48 +80,48 @@
       display: flex;
       justify-content: center;
       gap: 1.5rem;
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
 
     .socials a {
       color: cyan;
-      text-decoration: none;
-      transition: color 0.3s;
+      transition: transform 0.3s ease, color 0.3s ease;
     }
 
     .socials a:hover {
       color: #1abc9c;
+      transform: scale(1.2);
     }
   </style>
 </head>
 <body>
-  <div class="grid">
-    <div class="grid-item">
-      <img src="https://picsum.photos/id/1011/800/600" alt="Spatial Analysis">
+  <main>
+    <section class="grid-item">
+      <img src="https://picsum.photos/id/1011/800/600" alt="Mapa digital interactivo para geomática">
       <div class="label">Geomática</div>
-    </div>
-    <div class="grid-item">
-      <img src="https://picsum.photos/id/1015/800/600" alt="Data Engineering">
+    </section>
+    <section class="grid-item">
+      <img src="https://picsum.photos/id/1015/800/600" alt="Pantalla de ingeniería de datos en ciudad inteligente">
       <div class="label">Ingeniería de Datos</div>
-    </div>
-    <div class="grid-item">
-      <img src="https://picsum.photos/id/1025/800/600" alt="Remote Sensing">
+    </section>
+    <section class="grid-item">
+      <img src="https://picsum.photos/id/1025/800/600" alt="Imagen satelital de sensores remotos">
       <div class="label">Sensores Remotos</div>
-    </div>
-    <div class="grid-item">
-      <img src="https://picsum.photos/id/1035/800/600" alt="AI & Predictions">
-      <div class="label">AI & Predicciones</div>
-    </div>
-  </div>
+    </section>
+    <section class="grid-item">
+      <img src="https://picsum.photos/id/1035/800/600" alt="IA y predicciones aplicadas a transporte urbano">
+      <div class="label">IA & Predicciones</div>
+    </section>
+  </main>
 
   <footer>
     <h2>Lluis Lacán</h2>
     <p>Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
     <div class="socials">
-      <a href="https://linkedin.com" target="_blank">in</a>
-      <a href="https://github.com" target="_blank">GH</a>
-      <a href="https://twitter.com" target="_blank">X</a>
-      <a href="mailto:luis.lacan@gmail.com">✉</a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+      <a href="mailto:luis.lacan@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
     </div>
   </footer>
 </body>
