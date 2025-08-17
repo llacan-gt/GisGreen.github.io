@@ -298,6 +298,7 @@
   </section>
 
   <!-- Redes sociales -->
+<!-- Footer -->
 <footer style="background:#1e1e1e; color:#00bcd4; padding:40px 20px; text-align:center;">
   <h2 style="margin-bottom:10px;">Luis Lacán</h2>
   <p style="margin-bottom:25px; color:#ccc;">Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
@@ -314,6 +315,9 @@
     </a>
     <a href="mailto:luis.lacan@gmail.com" style="margin:0 10px; color:#00bcd4; font-size:28px; transition:0.3s;">
       <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://wa.me/50231767274" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px; transition:0.3s;">
+      <i class="fab fa-whatsapp"></i>
     </a>
   </div>
 
