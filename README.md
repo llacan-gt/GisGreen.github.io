@@ -177,7 +177,15 @@
 
 <!-- Secciones (mantengo igual tu estructura) -->
 <section id="colab"> ... </section>
-<section id="gee"> ... </section>
+<section id="gee">
+    <h2>Google Earth Engine</h2>
+  <div class="cards">
+    <!-- Ejemplo 1 con link a GEE -->
+    <a href="https://code.earthengine.google.com/c7c033c19f9598ccc9ed6a1a0112955a" target="_blank" class="card">
+      <img src="https://earthengine.google.com/static/images/earth-engine-logo.png" alt="Google Earth Engine">
+      <h3>Ejemplo 1</h3>
+      <p>Clasificación supervisada en Google Earth Engine. Haz clic para abrir el script.</p>
+    </a>
 <section id="bases"> ... </section>
 <section id="datos"> ... </section>
 <section id="sensores"> ... </section>
