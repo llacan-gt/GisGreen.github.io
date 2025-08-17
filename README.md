@@ -302,9 +302,10 @@
 <!-- Redes sociales -->
 <div class="social">
   <h3>Sígueme en redes sociales</h3>
-  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-  <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-  <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://linkedin.com" target="_blank">in</a>
+      <a href="https://github.com" target="_blank">GH</a>
+      <a href="https://twitter.com" target="_blank">X</a>
+      <a href="mailto:luis.lacan@gmail.com">✉</a>
 </div>
 
   <footer>
