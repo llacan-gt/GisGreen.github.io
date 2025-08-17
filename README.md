@@ -2,126 +2,199 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luis Lacán – GeoAnalytics & Geomática</title>
-  <meta name="description" content="Luis Lacán – Especialista en Geomática, Análisis Espacial e Innovación con IA.">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <title>GeoAnalytics - Luis Lacán</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #0e0e0e;
-      color: #fff;
-      line-height: 1.6;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f6fa;
+      color: #2f3640;
     }
-
-    main {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 0;
-    }
-
-    .grid-item {
-      position: relative;
-      overflow: hidden;
-      height: 300px;
-    }
-
-    .grid-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      filter: brightness(70%);
-      transition: transform 0.6s ease, filter 0.4s ease;
-    }
-
-    .grid-item:hover img {
-      transform: scale(1.1);
-      filter: brightness(55%);
-    }
-
-    .label {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      background: rgba(0,0,0,0.65);
-      padding: 10px 18px;
-      border-radius: 8px;
-      color: cyan;
-      font-weight: 600;
-      font-size: 1.2rem;
-      letter-spacing: 0.5px;
-    }
-
-    footer {
+    header {
+      background: #273c75;
+      color: white;
+      padding: 20px;
       text-align: center;
-      background: #1a1a1a;
-      padding: 2rem 1rem;
-      margin-top: 2rem;
     }
-
-    footer h2 {
+    header h1 {
       margin: 0;
-      font-size: 2rem;
-      color: cyan;
-      font-weight: 600;
+      font-size: 2em;
     }
-
-    footer p {
-      margin: 0.5rem 0 1.5rem;
-      font-size: 1rem;
-      color: #aaa;
-    }
-
-    .socials {
+    nav {
       display: flex;
       justify-content: center;
-      gap: 1.5rem;
-      font-size: 1.6rem;
+      flex-wrap: wrap;
+      background: #192a56;
     }
-
-    .socials a {
-      color: cyan;
-      transition: transform 0.3s ease, color 0.3s ease;
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background 0.3s;
     }
-
-    .socials a:hover {
-      color: #1abc9c;
-      transform: scale(1.2);
+    nav a:hover {
+      background: #718093;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2em;
+      color: #192a56;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card h3 {
+      margin: 10px 0;
+      color: #273c75;
+    }
+    .card p {
+      font-size: 0.95em;
+      color: #555;
+    }
+    footer {
+      background: #273c75;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <main>
-    <section class="grid-item">
-      <img src="https://picsum.photos/id/1011/800/600" alt="Mapa digital interactivo para geomática">
-      <div class="label">Geomática</div>
-    </section>
-    <section class="grid-item">
-      <img src="https://picsum.photos/id/1015/800/600" alt="Pantalla de ingeniería de datos en ciudad inteligente">
-      <div class="label">Ingeniería de Datos</div>
-    </section>
-    <section class="grid-item">
-      <img src="https://picsum.photos/id/1025/800/600" alt="Imagen satelital de sensores remotos">
-      <div class="label">Sensores Remotos</div>
-    </section>
-    <section class="grid-item">
-      <img src="https://picsum.photos/id/1035/800/600" alt="IA y predicciones aplicadas a transporte urbano">
-      <div class="label">IA & Predicciones</div>
-    </section>
-  </main>
+  <header>
+    <h1>GeoAnalytics - Luis Lacán</h1>
+    <p>Explorando datos geoespaciales, Machine Learning y más</p>
+  </header>
+
+  <nav>
+    <a href="#colab">Google Colab</a>
+    <a href="#gee">Google Earth Engine</a>
+    <a href="#basedatos">Bases de Datos Espaciales</a>
+    <a href="#ingenieria">Ingeniería de Datos</a>
+    <a href="#sensores">Sensores Remotos</a>
+    <a href="#ml">Machine Learning</a>
+    <a href="#dl">Deep Learning</a>
+  </nav>
+
+  <section id="colab">
+    <h2>Google Colab</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Ejemplo 1</h3>
+        <p>Notebook de introducción al análisis espacial en Google Colab.</p>
+      </div>
+      <div class="card">
+        <h3>Ejemplo 2</h3>
+        <p>Procesamiento de imágenes satelitales en Python.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gee">
+    <h2>Google Earth Engine</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Mapas dinámicos</h3>
+        <p>Ejemplo de clasificación supervisada con Sentinel-2.</p>
+      </div>
+      <div class="card">
+        <h3>Visualización</h3>
+        <p>Uso de colecciones de imágenes para análisis temporal.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="basedatos">
+    <h2>Bases de Datos Espaciales</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>PostgreSQL + PostGIS</h3>
+        <p>Gestión de datos espaciales en bases de datos relacionales.</p>
+      </div>
+      <div class="card">
+        <h3>Consultas Espaciales</h3>
+        <p>Ejemplos de SQL para análisis geoespacial.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ingenieria">
+    <h2>Ingeniería de Datos</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>ETL Geoespacial</h3>
+        <p>Procesos de extracción, transformación y carga de datos.</p>
+      </div>
+      <div class="card">
+        <h3>Big Data</h3>
+        <p>Gestión de datos geográficos a gran escala.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sensores">
+    <h2>Sensores Remotos</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Satélites</h3>
+        <p>Uso de Sentinel, Landsat y otros satélites.</p>
+      </div>
+      <div class="card">
+        <h3>Drones</h3>
+        <p>Aplicaciones de UAV para monitoreo ambiental.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ml">
+    <h2>Machine Learning</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Clasificación</h3>
+        <p>Aplicación de Random Forest en detección de coberturas.</p>
+      </div>
+      <div class="card">
+        <h3>Predicciones</h3>
+        <p>Modelos predictivos aplicados a datos geográficos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="dl">
+    <h2>Deep Learning</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Redes Neuronales</h3>
+        <p>Aplicación de CNN en imágenes satelitales.</p>
+      </div>
+      <div class="card">
+        <h3>Detección Avanzada</h3>
+        <p>Uso de modelos de deep learning en detección de objetos.</p>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    <h2>Luis Lacán</h2>
-    <p>Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
-    <div class="socials">
-      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-      <a href="mailto:luis.lacan@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-    </div>
+    <p>© 2025 Luis Lacán - GeoAnalytics</p>
   </footer>
 </body>
 </html>
