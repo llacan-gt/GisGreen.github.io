@@ -1,9 +1,7 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Geoanálisis - Luis Lacán</title>
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -169,19 +167,23 @@
   </nav>
 
   <!-- Secciones principales -->
-  <section id="colab">
-    <h2>Google Colab</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Ejemplo 1</h3>
-        <p>Cuaderno de introducción al análisis espacial en Google Colab.</p>
-      </div>
-      <div class="card">
-        <h3>Ejemplo 2</h3>
-        <p>Procesamiento de imágenes satelitales en Python.</p>
-      </div>
+<section id="colab">
+  <h2>Google Colab</h2>
+  <div class="cards">
+    <!-- Ejemplo 1 con imagen y enlace usando onclick -->
+    <div class="card" style="cursor:pointer;" onclick="window.open('https://colab.research.google.com/tu_notebook.ipynb', '_blank')">
+      <img src="https://via.placeholder.com/260x140.png?text=Google+Colab" alt="Google Colab" style="width:100%; border-radius:10px; margin-bottom:10px;">
+      <h3>Ejemplo 1</h3>
+      <p>Cuaderno de introducción al análisis espacial en Google Colab.</p>
     </div>
-  </section>
+
+    <!-- Ejemplo 2 -->
+    <div class="card">
+      <h3>Ejemplo 2</h3>
+      <p>Procesamiento de imágenes satelitales en Python.</p>
+    </div>
+  </div>
+</section>
 
   <section id="gee">
     <h2>Google Earth Engine</h2>
