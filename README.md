@@ -298,7 +298,6 @@
   </section>
 
   <!-- Redes sociales -->
-<!-- Footer -->
 <footer style="background:#1e1e1e; color:#00bcd4; padding:40px 20px; text-align:center;">
   <h2 style="margin-bottom:10px;">Luis Lacán</h2>
   <p style="margin-bottom:25px; color:#ccc;">Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
