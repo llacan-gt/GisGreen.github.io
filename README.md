@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -13,8 +14,6 @@
       line-height: 1.6;
       overflow-x: hidden;
     }
-
-    /* Encabezado */
     header {
       background: linear-gradient(270deg, #0d1b2a, #1b263b, #0d1b2a);
       background-size: 600% 600%;
@@ -42,8 +41,6 @@
       font-size: 1.2em;
       color: #aaa;
     }
-
-    /* Barra de navegación */
     nav {
       background: #1b263b;
       padding: 12px;
@@ -64,8 +61,6 @@
       color: #00eaff;
       transform: scale(1.1);
     }
-
-    /* Secciones */
     section {
       padding: 60px 20px;
       max-width: 1100px;
@@ -78,10 +73,7 @@
       background: #111827;
     }
     @keyframes fadeUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      to { opacity: 1; transform: translateY(0); }
     }
     section h2 {
       text-align: center;
@@ -104,8 +96,6 @@
       0%, 100% { transform: scaleX(1); opacity: 0.7; }
       50% { transform: scaleX(1.5); opacity: 1; }
     }
-
-    /* Tarjetas */
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -133,24 +123,14 @@
       transition: opacity 0.4s;
       opacity: 0;
     }
-    .card:hover::before {
-      opacity: 1;
-    }
+    .card:hover::before { opacity: 1; }
     .card:hover {
       transform: translateY(-8px) scale(1.02);
       background: #243447;
       box-shadow: 0 6px 20px rgba(0,234,255,0.4);
     }
-    .card h3 {
-      margin: 0 0 10px;
-      color: #00eaff;
-    }
-    .card p {
-      color: #ccc;
-      font-size: 0.95em;
-    }
-
-    /* Sección de redes sociales */
+    .card h3 { margin: 0 0 10px; color: #00eaff; }
+    .card p { color: #ccc; font-size: 0.95em; }
     .social {
       margin-top: 40px;
       padding: 20px;
@@ -158,10 +138,7 @@
       border-top: 2px solid #00bcd4;
       text-align: center;
     }
-    .social h3 {
-      color: #00bcd4;
-      margin-bottom: 15px;
-    }
+    .social h3 { color: #00bcd4; margin-bottom: 15px; }
     .social a {
       margin: 0 10px;
       text-decoration: none;
@@ -169,11 +146,7 @@
       font-size: 24px;
       transition: color 0.3s;
     }
-    .social a:hover {
-      color: #ffffff;
-    }
-
-    /* Esquema adicional con cajas */
+    .social a:hover { color: #ffffff; }
     .container {
       display: flex;
       justify-content: center;
@@ -192,9 +165,7 @@
       box-shadow: 0 4px 10px rgba(0, 188, 212, 0.3);
       transition: transform 0.3s;
     }
-    .box:hover {
-      transform: scale(1.05);
-    }
+    .box:hover { transform: scale(1.05); }
     .box img {
       width: 100%;
       height: 120px;
@@ -202,20 +173,13 @@
       border-radius: 8px;
       margin-bottom: 10px;
     }
-    .box h2 {
-      font-size: 18px;
-      color: #f5f5f5;
-      margin-bottom: 10px;
-    }
-    .box p {
-      font-size: 14px;
-      color: #ccc;
-    }
+    .box h2 { font-size: 18px; color: #f5f5f5; margin-bottom: 10px; }
+    .box p { font-size: 14px; color: #ccc; }
   </style>
 
-  <!-- Font Awesome para íconos de redes sociales -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-        integrity="sha512-pM5xK3xC7n1V8XbCw6JzQFdD8Jn6eX+PhU+6dMI3GYYdD9cTz2nI7V9/kYXeZq3eTvjFS3zz1qV+rmFfiN6/4g==" 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-pM5xK3xC7n1V8XbCw6JzQFdD8Jn6eX+PhU+6dMI3GYYdD9cTz2nI7V9/kYXeZq3eTvjFS3zz1qV+rmFfiN6/4g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -334,16 +298,17 @@
     </div>
   </section>
 
-  <!-- Sección de redes sociales -->
- <div class="social">
-  <h3>Sígueme en redes sociales</h3>
-  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-  <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-  <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-</div>
+  <!-- Redes sociales -->
+  <div class="social">
+    <h3>Sígueme en redes sociales</h3>
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  </div>
 
   <footer>
     © 2025 Luis Lacán - GisGreen - luis.lacan@gmail.com
-    
+  </footer>
+
 </body>
 </html>
