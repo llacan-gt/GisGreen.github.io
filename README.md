@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -13,6 +14,7 @@
       line-height: 1.6;
       overflow-x: hidden;
     }
+
     header {
       background: linear-gradient(270deg, #0d1b2a, #1b263b, #0d1b2a);
       background-size: 600% 600%;
@@ -20,26 +22,31 @@
       padding: 40px 20px;
       text-align: center;
     }
+
     @keyframes gradientShift {
       0% {background-position: 0% 50%;}
       50% {background-position: 100% 50%;}
       100% {background-position: 0% 50%;}
     }
+
     header h1 {
       margin: 0;
       color: #00eaff;
       font-size: 2.5em;
       animation: glow 2s ease-in-out infinite alternate;
     }
+
     @keyframes glow {
       from { text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff; }
       to { text-shadow: 0 0 20px #00eaff, 0 0 40px #00eaff; }
     }
+
     header p {
       margin: 10px 0 0;
       font-size: 1.2em;
       color: #aaa;
     }
+
     nav {
       background: #1b263b;
       padding: 12px;
@@ -48,6 +55,7 @@
       top: 0;
       z-index: 10;
     }
+
     nav a {
       color: #eee;
       margin: 0 15px;
@@ -56,24 +64,30 @@
       transition: color 0.3s, transform 0.3s;
       display: inline-block;
     }
+
     nav a:hover {
       color: #00eaff;
       transform: scale(1.1);
     }
+
     section {
       padding: 60px 20px;
       max-width: 1100px;
       margin: auto;
       opacity: 0;
-      transform: translateY(30px);
-      animation: fadeUp 1s ease forwards;
+      transform: translateY(50px);
+      transition: all 0.8s ease-out;
     }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     section:nth-child(even) {
       background: #111827;
     }
-    @keyframes fadeUp {
-      to { opacity: 1; transform: translateY(0); }
-    }
+
     section h2 {
       text-align: center;
       margin-bottom: 30px;
@@ -81,6 +95,7 @@
       font-size: 2em;
       position: relative;
     }
+
     section h2::after {
       content: "";
       display: block;
@@ -91,15 +106,18 @@
       border-radius: 3px;
       animation: pulse 2s infinite;
     }
+
     @keyframes pulse {
       0%, 100% { transform: scaleX(1); opacity: 0.7; }
       50% { transform: scaleX(1.5); opacity: 1; }
     }
+
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 25px;
     }
+
     .card {
       background: #1e293b;
       padding: 25px;
@@ -110,6 +128,7 @@
       position: relative;
       overflow: hidden;
     }
+
     .card::before {
       content: "";
       position: absolute;
@@ -122,12 +141,14 @@
       transition: opacity 0.4s;
       opacity: 0;
     }
+
     .card:hover::before { opacity: 1; }
     .card:hover {
       transform: translateY(-8px) scale(1.02);
       background: #243447;
       box-shadow: 0 6px 20px rgba(0,234,255,0.4);
     }
+
     .card h3 { margin: 0 0 10px; color: #00eaff; }
     .card p { color: #ccc; font-size: 0.95em; }
     .card img {
@@ -138,6 +159,7 @@
       margin-bottom: 10px;
       border: 1px solid rgba(0,234,255,0.2);
     }
+
     /* Estilos redes sociales */
     .socials a {
       margin: 0 10px;
@@ -146,6 +168,7 @@
       text-decoration: none;
       transition: all 0.3s ease-in-out;
     }
+
     .socials a:hover {
       color: #fff;
       text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 30px #00eaff;
@@ -175,14 +198,58 @@
   <a href="#dl">Deep Learning</a>
 </nav>
 
-<!-- Secciones (mantengo igual tu estructura) -->
-<section id="colab"> ... </section>
-<section id="gee"> ... </section>
-<section id="bases"> ... </section>
-<section id="datos"> ... </section>
-<section id="sensores"> ... </section>
-<section id="ml"> ... </section>
-<section id="dl"> ... </section>
+<!-- Secciones -->
+<section id="colab">
+  <h2>Google Colab</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x160.png?text=Colab+Ejemplo+1" alt="Colab Ejemplo 1">
+      <h3>Ejemplo 1</h3>
+      <p>Procesamiento de imágenes satelitales con Python.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x160.png?text=Colab+Ejemplo+2" alt="Colab Ejemplo 2">
+      <h3>Ejemplo 2</h3>
+      <p>Análisis de datos geoespaciales y visualización de mapas.</p>
+    </div>
+  </div>
+</section>
+
+<section id="gee">
+  <h2>Google Earth Engine</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x160.png?text=GEE+Ejemplo" alt="GEE Ejemplo">
+      <h3>Ejemplo GEE</h3>
+      <p>Clasificación de imágenes Sentinel-2 y análisis NDVI.</p>
+    </div>
+  </div>
+</section>
+
+<section id="bases">
+  <h2>Bases de Datos Espaciales</h2>
+  <p>Aprende a conectar PostgreSQL/PostGIS y consultar información geoespacial.</p>
+</section>
+
+<section id="datos">
+  <h2>Ingeniería de Datos</h2>
+  <p>Procesamiento, limpieza y transformación de grandes volúmenes de datos.</p>
+</section>
+
+<section id="sensores">
+  <h2>Sensores Remotos</h2>
+  <p>Introducción a sensores satelitales y UAV para monitoreo ambiental.</p>
+</section>
+
+<section id="ml">
+  <h2>Machine Learning</h2>
+  <p>Aplicación de modelos supervisados y no supervisados para análisis geoespacial.</p>
+</section>
+
+<section id="dl">
+  <h2>Deep Learning</h2>
+  <p>Redes neuronales y aprendizaje profundo para clasificación y predicción de datos espaciales.</p>
+</section>
 
 <!-- Footer -->
 <footer style="background:#1e1e1e; color:#00bcd4; padding:40px 20px; text-align:center;">
@@ -199,6 +266,23 @@
 
   <p style="color:#888; font-size:14px;">© 2025 Luis Lacán - GisGreen - luis.lacan@gmail.com</p>
 </footer>
+
+<script>
+  // Animación al hacer scroll: mostrar secciones
+  document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => observer.observe(section));
+  });
+</script>
 
 </body>
 </html>
