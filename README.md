@@ -1,112 +1,162 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GeoAnalytics - Luis Lacán</title>
+  <title>Geoanálisis - Luis Lacán</title>
   <style>
+    /* Estilos generales */
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #f5f6fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #f5f5f5;
+      line-height: 1.6;
     }
+
+    /* Encabezado */
     header {
-      background: #000;
-      color: #00aaff;
+      background: #0d1b2a;
       padding: 20px;
       text-align: center;
-      font-size: 1.8em;
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 15px;
-      padding: 20px;
-    }
-    .card {
-      position: relative;
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-    .card:hover {
-      transform: scale(1.03);
-    }
-    .card img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      display: block;
-      filter: brightness(70%);
-      transition: filter 0.3s ease;
-    }
-    .card:hover img {
-      filter: brightness(50%);
-    }
-    .overlay {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      background: rgba(0,0,0,0.6);
-      padding: 10px 15px;
-      border-radius: 8px;
-    }
-    .overlay h3 {
+    header h1 {
       margin: 0;
       color: #00eaff;
-      font-size: 1.2em;
+      font-size: 2em;
     }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.1em;
+      color: #aaa;
+    }
+
+    /* Barra de navegación */
+    nav {
+      background: #1b263b;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      color: #eee;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00eaff;
+    }
+
+    /* Secciones */
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #00eaff;
+      font-size: 1.8em;
+    }
+
+    /* Tarjetas */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease, background 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      background: #243447;
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      color: #00eaff;
+    }
+    .card p {
+      color: #ccc;
+      font-size: 0.95em;
+    }
+
+    /* Footer */
     footer {
       text-align: center;
-      padding: 15px;
-      background: #000;
+      padding: 20px;
+      background: #0d1b2a;
       color: #888;
-      margin-top: 30px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    GeoAnalytics - Luis Lacán
+    <h1>Geoanálisis - Luis Lacán</h1>
+    <p>Explorando datos geoespaciales, Machine Learning y más</p>
   </header>
 
-  <div class="grid">
-    <div class="card">
-      <img src="https://source.unsplash.com/800x600/?code,python" alt="Google Colab">
-      <div class="overlay"><h3>Google Colab</h3></div>
+  <nav>
+    <a href="#colab">Google Colab</a>
+    <a href="#gee">Google Earth Engine</a>
+    <a href="#bases">Bases de Datos Espaciales</a>
+    <a href="#datos">Ingeniería de Datos</a>
+    <a href="#sensores">Sensores Remotos</a>
+    <a href="#ml">Machine Learning</a>
+    <a href="#dl">Deep Learning</a>
+  </nav>
+
+  <section id="colab">
+    <h2>Google Colab</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Ejemplo 1</h3>
+        <p>Cuaderno de introducción al análisis espacial en Google Colab.</p>
+      </div>
+      <div class="card">
+        <h3>Ejemplo 2</h3>
+        <p>Procesamiento de imágenes satelitales en Python.</p>
+      </div>
     </div>
-    <div class="card">
-      <img src="https://source.unsplash.com/800x600/?earth,satellite" alt="Google Earth Engine">
-      <div class="overlay"><h3>Google Earth Engine</h3></div>
+  </section>
+
+  <section id="gee">
+    <h2>Google Earth Engine</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Ejemplo 1</h3>
+        <p>Clasificación de coberturas terrestres usando GEE.</p>
+      </div>
+      <div class="card">
+        <h3>Ejemplo 2</h3>
+        <p>Monitoreo de cambios forestales con imágenes Landsat.</p>
+      </div>
     </div>
-    <div class="card">
-      <img src="https://source.unsplash.com/800x600/?database,data" alt="Bases de Datos Espaciales">
-      <div class="overlay"><h3>Bases de Datos Espaciales</h3></div>
+  </section>
+
+  <section id="bases">
+    <h2>Bases de Datos Espaciales</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Ejemplo 1</h3>
+        <p>Uso de PostGIS para almacenar y consultar datos geoespaciales.</p>
+      </div>
+      <div class="card">
+        <h3>Ejemplo 2</h3>
+        <p>Visualización de capas espaciales desde bases de datos.</p>
+      </div>
     </div>
-    <div class="card">
-      <img src="https://source.unsplash.com/800x600/?technology,data" alt="Ingeniería de Datos">
-      <div class="overlay"><h3>Ingeniería de Datos</h3></div>
-    </div>
-    <div class="card">
-      <img src="https://source.unsplash.com/800x600/?drone,aerial" alt="Sensores Remotos">
-      <div class="overlay"><h3>Sensores Remotos</h3></div>
-    </div>
-    <div class="card">
-      <img src="https://source.unsplash.com/800x600/?ai,machinelearning" alt="Machine Learning">
-      <div class="overlay"><h3>Machine Learning</h3></div>
-    </div>
-    <div class="card">
-      <img src="https://source.unsplash.com/800x600/?deep,neuralnetwork" alt="Deep Learning">
-      <div class="overlay"><h3>Deep Learning</h3></div>
-    </div>
-  </div>
+  </section>
 
   <footer>
-    © 2025 Luis Lacán - GeoAnalytics
+    © 2025 Luis Lacán - Geoanálisis
   </footer>
 
 </body>
