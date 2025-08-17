@@ -303,27 +303,35 @@
   <p style="margin-bottom:25px; color:#ccc;">Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
   
   <div class="socials" style="margin-bottom:25px;">
+    <!-- LinkedIn -->
     <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px; transition:0.3s;">
       <i class="fab fa-linkedin"></i>
     </a>
+    
+    <!-- GitHub -->
     <a href="https://github.com" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px; transition:0.3s;">
       <i class="fab fa-github"></i>
     </a>
+    
+    <!-- Twitter (X) -->
     <a href="https://twitter.com" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px; transition:0.3s;">
-      <i class="fab fa-x-twitter"></i>
+      <i class="fab fa-twitter"></i>
     </a>
+    
+    <!-- Correo -->
     <a href="mailto:luis.lacan@gmail.com" style="margin:0 10px; color:#00bcd4; font-size:28px; transition:0.3s;">
       <i class="fas fa-envelope"></i>
     </a>
-    <a href="https://wa.me/50231767274" target="_blank" style="margin:0 10px; font-size:28px; transition:0.3s; color:#00bcd4;">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28" height="28" fill="currentColor">
-        <path d="M380.9 97.1C339-44.7 149.1-21 62.6 95.8c-28 37.2-43.4 83.4-43.4 131.5 0 24.6 5.3 48.6 15.4 70.7L0 512l215.6-33.1c48.2 15.2 97.3 8.4 141-19.1 37.2-22.5 65.1-57.9 80.4-99.2 15.3-41.4 15.5-87.8.1 129.8-3.1-9.4-9.5-27.2-17.2-48.7zM224 336c-53 0-96-43-96-96s43-96 96-96 96 43 96 96-43 96-96 96z"/>
-        </svg>
+    
+    <!-- WhatsApp -->
+    <a href="https://wa.me/50231767274" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px; transition:0.3s;">
+      <i class="fab fa-whatsapp"></i>
     </a>
   </div>
 
   <p style="color:#888; font-size:14px;">© 2025 Luis Lacán - GisGreen - luis.lacan@gmail.com</p>
 </footer>
+
 
 </body>
 </html>
