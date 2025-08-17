@@ -1,163 +1,111 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Geoanálisis - Luis Lacán</title>
+  <title>SIG GREEN - Inicio</title>
   <style>
-    /* Estilos generales */
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #111;
-      color: #f5f5f5;
-      line-height: 1.6;
+      padding: 0;
+      background-color: #f5f7f5;
+      color: #333;
     }
-
-    /* Encabezado */
     header {
-      background: #0d1b2a;
+      background-color: #2e7d32;
+      color: white;
       padding: 20px;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      color: #00eaff;
-      font-size: 2em;
+      font-size: 2.5rem;
     }
     header p {
       margin: 5px 0 0;
-      font-size: 1.1em;
-      color: #aaa;
     }
-
-    /* Barra de navegación */
-    nav {
-      background: #1b263b;
-      padding: 12px;
-      text-align: center;
+    main {
+      padding: 20px;
     }
-    nav a {
-      color: #eee;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #00eaff;
-    }
-
-    /* Secciones */
     section {
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
+      margin-bottom: 40px;
     }
-    section h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #00eaff;
-      font-size: 1.8em;
+    h2 {
+      color: #2e7d32;
+      border-bottom: 2px solid #c8e6c9;
+      display: inline-block;
+      margin-bottom: 15px;
     }
-
-    /* Tarjetas */
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .examples {
+      display: flex;
       gap: 20px;
+      flex-wrap: wrap;
     }
-    .card {
-      background: #1e293b;
-      padding: 20px;
+    .example {
+      flex: 1 1 calc(50% - 20px);
+      background: white;
+      padding: 15px;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-      transition: transform 0.3s ease, background 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      background: #243447;
-    }
-    .card h3 {
-      margin: 0 0 10px;
-      color: #00eaff;
-    }
-    .card p {
-      color: #ccc;
-      font-size: 0.95em;
-    }
-
-    /* Footer */
-    footer {
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       text-align: center;
-      padding: 20px;
-      background: #0d1b2a;
-      color: #888;
-      margin-top: 40px;
+    }
+    .example img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 10px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Geoanálisis - Luis Lacán</h1>
-    <p>Explorando datos geoespaciales, Machine Learning y más</p>
+    <h1>SIG GREEN</h1>
+    <p>Plataforma de análisis geoespacial para proyectos sostenibles</p>
   </header>
 
-  <nav>
-    <a href="#colab">Google Colab</a>
-    <a href="#gee">Google Earth Engine</a>
-    <a href="#bases">Bases de Datos Espaciales</a>
-    <a href="#datos">Ingeniería de Datos</a>
-    <a href="#sensores">Sensores Remotos</a>
-    <a href="#ml">Machine Learning</a>
-    <a href="#dl">Deep Learning</a>
-  </nav>
+  <main>
+    <section>
+      <h2>Acerca de</h2>
+      <p>
+        SIG GREEN es una plataforma que reúne herramientas de análisis geoespacial,
+        mapas temáticos y soluciones innovadoras para la gestión ambiental,
+        forestal y territorial.
+      </p>
+    </section>
 
-  <section id="colab">
-    <h2>Google Colab</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Ejemplo 1</h3>
-        <p>Cuaderno de introducción al análisis espacial en Google Colab.</p>
+    <section>
+      <h2>Ejemplos de análisis</h2>
+      <div class="examples">
+        <div class="example">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Ejemplo 1">
+          <p>Ejemplo 1: Mapa de cobertura forestal.</p>
+        </div>
+        <div class="example">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Ejemplo 2">
+          <p>Ejemplo 2: Monitoreo de uso de suelo.</p>
+        </div>
+        <div class="example">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Ejemplo 3">
+          <p>Ejemplo 3: Evaluación de cuerpos de agua.</p>
+        </div>
+        <div class="example">
+          <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e" alt="Ejemplo 4">
+          <p>Ejemplo 4: Análisis de áreas protegidas.</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Ejemplo 2</h3>
-        <p>Procesamiento de imágenes satelitales en Python.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="gee">
-    <h2>Google Earth Engine</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Ejemplo 1</h3>
-        <p>Clasificación de coberturas terrestres usando GEE.</p>
-      </div>
-      <div class="card">
-        <h3>Ejemplo 2</h3>
-        <p>Monitoreo de cambios forestales con imágenes Landsat.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="bases">
-    <h2>Bases de Datos Espaciales</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Ejemplo 1</h3>
-        <p>Uso de PostGIS para almacenar y consultar datos geoespaciales.</p>
-      </div>
-      <div class="card">
-        <h3>Ejemplo 2</h3>
-        <p>Visualización de capas espaciales desde bases de datos.</p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
-    © 2025 Luis Lacán - Geoanálisis
+    <p>© 2025 SIG GREEN | Todos los derechos reservados</p>
   </footer>
-
 </body>
 </html>
