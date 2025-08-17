@@ -184,7 +184,7 @@
   <div class="cards">
     <!-- Ejemplo 1 -->
     <div class="card" onclick="window.open('https://colab.research.google.com/tu_notebook.ipynb', '_blank')">
-      <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Análisis espacial">
+      <img src="Colab.png" alt="Google Colab">
       <h3>Ejemplo 1</h3>
       <p>Cuaderno de introducción al análisis espacial en Google Colab.</p>
     </div>
@@ -306,11 +306,21 @@
   <p style="margin-bottom:25px; color:#ccc;">Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
   
   <div class="socials" style="margin-bottom:25px;">
-    <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px;"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px;"><i class="fab fa-github"></i></a>
-    <a href="https://twitter.com" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px;"><i class="fab fa-twitter"></i></a>
-    <a href="mailto:luis.lacan@gmail.com" style="margin:0 10px; color:#00bcd4; font-size:28px;"><i class="fas fa-envelope"></i></a>
-    <a href="https://wa.me/50231767274" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px;"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px; text-decoration:none;">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px; text-decoration:none;">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://twitter.com" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px; text-decoration:none;">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="mailto:luis.lacan@gmail.com" style="margin:0 10px; color:#00bcd4; font-size:28px; text-decoration:none;">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://wa.me/50231767274" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px; text-decoration:none;">
+      <i class="fab fa-whatsapp"></i>
+    </a>
   </div>
 
   <p style="color:#888; font-size:14px;">© 2025 Luis Lacán - GisGreen - luis.lacan@gmail.com</p>
