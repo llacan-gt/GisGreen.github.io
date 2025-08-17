@@ -8,205 +8,189 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0a0a0a;
-      color: #f5f5f5;
+      background-color: #f4f4f9;
+      color: #333;
       line-height: 1.6;
-      overflow-x: hidden;
     }
+
     header {
-      background: linear-gradient(270deg, #0d1b2a, #1b263b, #0d1b2a);
-      background-size: 600% 600%;
-      animation: gradientShift 12s ease infinite;
-      padding: 40px 20px;
+      background: #2c3e50;
+      color: white;
+      padding: 20px 0;
       text-align: center;
     }
-    @keyframes gradientShift {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
+
     header h1 {
       margin: 0;
-      color: #00eaff;
-      font-size: 2.5em;
-      animation: glow 2s ease-in-out infinite alternate;
+      font-size: 2.5rem;
     }
-    @keyframes glow {
-      from { text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff; }
-      to { text-shadow: 0 0 20px #00eaff, 0 0 40px #00eaff; }
-    }
-    header p {
-      margin: 10px 0 0;
-      font-size: 1.2em;
-      color: #aaa;
-    }
+
     nav {
-      background: #1b263b;
-      padding: 12px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
+      margin-top: 10px;
     }
+
     nav a {
-      color: #eee;
       margin: 0 15px;
       text-decoration: none;
+      color: white;
       font-weight: bold;
-      transition: color 0.3s, transform 0.3s;
-      display: inline-block;
     }
-    nav a:hover {
-      color: #00eaff;
-      transform: scale(1.1);
-    }
+
     section {
-      padding: 60px 20px;
-      max-width: 1100px;
+      padding: 40px 20px;
+      max-width: 1200px;
       margin: auto;
-      opacity: 0;
-      transform: translateY(30px);
-      animation: fadeUp 1s ease forwards;
     }
-    section:nth-child(even) {
-      background: #111827;
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
     }
-    @keyframes fadeUp {
-      to { opacity: 1; transform: translateY(0); }
-    }
-    section h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      color: #00eaff;
-      font-size: 2em;
-      position: relative;
-    }
-    section h2::after {
-      content: "";
-      display: block;
-      width: 80px;
-      height: 3px;
-      background: #00eaff;
-      margin: 10px auto 0;
-      border-radius: 3px;
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0%, 100% { transform: scaleX(1); opacity: 0.7; }
-      50% { transform: scaleX(1.5); opacity: 1; }
-    }
+
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
+
     .card {
-      background: #1e293b;
-      padding: 25px;
+      background: white;
+      padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
-      transition: transform 0.4s ease, box-shadow 0.4s, background 0.4s;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
-    .card::before {
-      content: "";
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(0,234,255,0.1), transparent 60%);
-      transform: rotate(25deg);
-      transition: opacity 0.4s;
-      opacity: 0;
-    }
-    .card:hover::before { opacity: 1; }
+
     .card:hover {
-      transform: translateY(-8px) scale(1.02);
-      background: #243447;
-      box-shadow: 0 6px 20px rgba(0,234,255,0.4);
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     }
-    .card h3 { margin: 0 0 10px; color: #00eaff; }
-    .card p { color: #ccc; font-size: 0.95em; }
+
     .card img {
       width: 100%;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-bottom: 10px;
-      border: 1px solid rgba(0,234,255,0.2);
+      border-radius: 12px;
+      margin-bottom: 15px;
     }
-    /* Estilos redes sociales */
-    .socials a {
-      margin: 0 10px;
-      color: #00bcd4;
-      font-size: 28px;
-      text-decoration: none;
-      transition: all 0.3s ease-in-out;
+
+    /* Redes sociales */
+    .social {
+      text-align: center;
+      margin-top: 40px;
     }
-    .socials a:hover {
-      color: #fff;
-      text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 30px #00eaff;
+
+    .social a {
+      margin: 0 15px;
+      display: inline-block;
+    }
+
+    .social img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s;
+    }
+
+    .social img:hover {
       transform: scale(1.2);
     }
-  </style>
 
-  <!-- Font Awesome actualizado -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9zUqFqUuZ2ZCkxzgv2Fne5DE5FCDJ/NzNw2K6JqqPiR+jYwIVlY5PjaVXrUg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c3e50;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Geoanálisis - Luis Lacán</h1>
+    <nav>
+      <a href="#colab">Google Colab</a>
+      <a href="#gee">Google Earth Engine</a>
+      <a href="#procesamiento">Procesamiento</a>
+      <a href="#redes">Redes Sociales</a>
+    </nav>
+  </header>
 
-<header>
-  <h1>GisGreen</h1>
-  <p>"Bienvenido al fascinante mundo del análisis de información geoespacial! Aquí encontrarás notebooks y recursos de aprendizaje sobre ArcGIS Online, Google Colab, Google Earth Engine y bases de datos espaciales."</p>
-</header>
+  <!-- Sección Google Colab -->
+  <section id="colab">
+    <h2>Ejemplos en Google Colab</h2>
+    <div class="cards">
+      <!-- Ejemplo 1 -->
+      <div class="card">
+        <a href="https://colab.research.google.com/" target="_blank">
+          <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*Hq-3Zm7pC1RrO2D96aDqTg.png" alt="Google Colab">
+        </a>
+        <h3>Ejemplo 1</h3>
+        <p>Ejecutar notebooks en Google Colab.</p>
+      </div>
+    </div>
+  </section>
 
-<nav>
-  <a href="#colab">Google Colab</a>
-  <a href="#gee">Google Earth Engine</a>
-  <a href="#bases">Bases de Datos Espaciales</a>
-  <a href="#datos">Ingeniería de Datos</a>
-  <a href="#sensores">Sensores Remotos</a>
-  <a href="#ml">Machine Learning</a>
-  <a href="#dl">Deep Learning</a>
-</nav>
+  <!-- Sección Google Earth Engine -->
+  <section id="gee">
+    <h2>Ejemplos en Google Earth Engine</h2>
+    <div class="cards">
+      <!-- Ejemplo 1 modificado con tu link -->
+      <div class="card">
+        <a href="https://code.earthengine.google.com/c7c033c19f9598ccc9ed6a1a0112955a" target="_blank">
+          <img src="https://earthengine.google.com/static/images/earth-engine-logo.png" alt="Google Earth Engine">
+        </a>
+        <h3>Ejemplo 1</h3>
+        <p>Ejemplo de clasificación supervisada en Google Earth Engine.</p>
+      </div>
 
-<!-- Secciones (mantengo igual tu estructura) -->
-<section id="colab"> ... </section>
-<section id="gee">
-    <h2>Google Earth Engine</h2>
-  <div class="cards">
-    <!-- Ejemplo 1 con link a GEE -->
-    <a href="https://code.earthengine.google.com/c7c033c19f9598ccc9ed6a1a0112955a" target="_blank" class="card">
-      <img src="https://earthengine.google.com/static/images/earth-engine-logo.png" alt="Google Earth Engine">
-      <h3>Ejemplo 1</h3>
-      <p>Clasificación supervisada en Google Earth Engine. Haz clic para abrir el script.</p>
-    </a>
-<section id="bases"> ... </section>
-<section id="datos"> ... </section>
-<section id="sensores"> ... </section>
-<section id="ml"> ... </section>
-<section id="dl"> ... </section>
+      <!-- Ejemplo 2 -->
+      <div class="card">
+        <a href="https://developers.google.com/earth-engine/tutorials" target="_blank">
+          <img src="https://storage.googleapis.com/gweb-cloudblog-publish/original_images/DataCloud_1.png" alt="Procesamiento">
+        </a>
+        <h3>Ejemplo 2</h3>
+        <p>Procesamiento de imágenes satelitales en Google Earth Engine.</p>
+      </div>
+    </div>
+  </section>
 
-<!-- Footer -->
-<footer style="background:#1e1e1e; color:#00bcd4; padding:40px 20px; text-align:center;">
-  <h2 style="margin-bottom:10px;">Luis Lacán</h2>
-  <p style="margin-bottom:25px; color:#ccc;">Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
-  
-  <div class="socials" style="margin-bottom:25px;">
-    <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="mailto:luis.lacan@gmail.com"><i class="fas fa-envelope"></i></a>
-    <a href="https://wa.me/50231767274" target="_blank"><i class="fab fa-whatsapp"></i></a>
-  </div>
+  <!-- Sección Procesamiento -->
+  <section id="procesamiento">
+    <h2>Procesamiento de Imágenes</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://miro.medium.com/v2/resize:fit:1200/format:webp/1*4VHK3uKxR271GGBqBPdZiQ.png" alt="Procesamiento en Python">
+        <h3>Python</h3>
+        <p>Procesamiento de imágenes satelitales en Python usando librerías como Rasterio, Numpy y Scikit-Learn.</p>
+      </div>
+      <div class="card">
+        <img src="https://qgis.org/en/_static/logo.png" alt="QGIS">
+        <h3>QGIS</h3>
+        <p>Análisis espacial con QGIS para la gestión de datos geográficos.</p>
+      </div>
+    </div>
+  </section>
 
-  <p style="color:#888; font-size:14px;">© 2025 Luis Lacán - GisGreen - luis.lacan@gmail.com</p>
-</footer>
+  <!-- Redes Sociales -->
+  <section id="redes">
+    <h2>Conéctate conmigo</h2>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+      </a>
+      <a href="https://twitter.com/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+      </a>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Luis Lacán - Geoanálisis</p>
+  </footer>
 </body>
 </html>
+
