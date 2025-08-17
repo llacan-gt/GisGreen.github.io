@@ -132,8 +132,11 @@
     .card p { color: #ccc; font-size: 0.95em; }
     .card img {
       width: 100%;
+      height: 160px;
+      object-fit: cover;
       border-radius: 10px;
       margin-bottom: 10px;
+      border: 1px solid rgba(0,234,255,0.2);
     }
     .social {
       margin-top: 40px;
@@ -181,14 +184,14 @@
   <div class="cards">
     <!-- Ejemplo 1 -->
     <div class="card" onclick="window.open('https://colab.research.google.com/tu_notebook.ipynb', '_blank')">
-      <img src="https://via.placeholder.com/260x140.png?text=Google+Colab" alt="Google Colab">
+      <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Análisis espacial">
       <h3>Ejemplo 1</h3>
       <p>Cuaderno de introducción al análisis espacial en Google Colab.</p>
     </div>
 
     <!-- Ejemplo 2 -->
     <div class="card" onclick="window.open('https://colab.research.google.com/tu_otro_notebook.ipynb', '_blank')">
-      <img src="https://via.placeholder.com/260x140.png?text=Python+Satélites" alt="Python Satélites">
+      <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Imágenes satelitales">
       <h3>Ejemplo 2</h3>
       <p>Procesamiento de imágenes satelitales en Python.</p>
     </div>
@@ -200,12 +203,12 @@
   <h2>Google Earth Engine</h2>
   <div class="cards">
     <div class="card" onclick="window.open('https://developers.google.com/earth-engine/tutorials', '_blank')">
-      <img src="https://via.placeholder.com/260x140.png?text=GEE+Tutorial" alt="GEE Tutorial">
+      <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Clasificación de coberturas">
       <h3>Ejemplo 1</h3>
       <p>Clasificación de coberturas terrestres usando GEE.</p>
     </div>
     <div class="card" onclick="window.open('https://developers.google.com/earth-engine/datasets', '_blank')">
-      <img src="https://via.placeholder.com/260x140.png?text=GEE+Datasets" alt="GEE Datasets">
+      <img src="https://images.unsplash.com/photo-1446776899648-aa78eefe8ed0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Monitoreo forestal">
       <h3>Ejemplo 2</h3>
       <p>Monitoreo de cambios forestales con imágenes Landsat/Sentinel/Planet.</p>
     </div>
@@ -217,12 +220,12 @@
   <h2>Bases de Datos Espaciales</h2>
   <div class="cards">
     <div class="card" onclick="window.open('https://postgis.net/', '_blank')">
-      <img src="https://via.placeholder.com/260x140.png?text=PostGIS" alt="PostGIS">
+      <img src="https://images.unsplash.com/photo-1551269901-5c5e14c25df7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="PostGIS">
       <h3>Ejemplo 1</h3>
       <p>Uso de PostGIS / SQL Server para almacenar y consultar datos geoespaciales.</p>
     </div>
     <div class="card" onclick="window.open('https://www.microsoft.com/en-us/sql-server', '_blank')">
-      <img src="https://via.placeholder.com/260x140.png?text=SQL+Server" alt="SQL Server">
+      <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="SQL Server">
       <h3>Ejemplo 2</h3>
       <p>Visualización de capas espaciales desde bases de datos.</p>
     </div>
@@ -234,12 +237,12 @@
   <h2>Ingeniería de Datos</h2>
   <div class="cards">
     <div class="card" onclick="window.open('#', '_blank')">
-      <img src="https://via.placeholder.com/260x140.png?text=Automatización" alt="Automatización">
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Automatización">
       <h3>Ejemplo 1</h3>
       <p>Automatización de flujos de datos geoespaciales.</p>
     </div>
     <div class="card" onclick="window.open('#', '_blank')">
-      <img src="https://via.placeholder.com/260x140.png?text=Optimización" alt="Optimización">
+      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Optimización">
       <h3>Ejemplo 2</h3>
       <p>Optimización de pipelines de datos con Python.</p>
     </div>
@@ -251,12 +254,12 @@
   <h2>Sensores Remotos</h2>
   <div class="cards">
     <div class="card" onclick="window.open('#', '_blank')">
-      <img src="https://via.placeholder.com/260x140.png?text=Multiespectral" alt="Multiespectral">
+      <img src="https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Multiespectral">
       <h3>Ejemplo 1</h3>
       <p>Análisis multiespectral de imágenes satelitales.</p>
     </div>
     <div class="card" onclick="window.open('#', '_blank')">
-      <img src="https://via.placeholder.com/260x140.png?text=SAR" alt="SAR">
+      <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="SAR">
       <h3>Ejemplo 2</h3>
       <p>Detección de cambios con radar de apertura sintética (SAR).</p>
     </div>
@@ -268,12 +271,12 @@
   <h2>Machine Learning</h2>
   <div class="cards">
     <div class="card" onclick="window.open('#', '_blank')">
-      <img src="https://via.placeholder.com/260x140.png?text=ML+Predicción" alt="ML Predicción">
+      <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="ML Predicción">
       <h3>Ejemplo 1</h3>
       <p>Predicción de uso del suelo con modelos supervisados.</p>
     </div>
     <div class="card" onclick="window.open('#', '_blank')">
-      <img src="https://via.placeholder.com/260x140.png?text=ML+Clasificación" alt="ML Clasificación">
+      <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="ML Clasificación">
       <h3>Ejemplo 2</h3>
       <p>Clasificación automática de coberturas terrestres.</p>
     </div>
@@ -285,12 +288,12 @@
   <h2>Deep Learning</h2>
   <div class="cards">
     <div class="card" onclick="window.open('#', '_blank')">
-      <img src="https://via.placeholder.com/260x140.png?text=Redes+Convolucionales" alt="Redes Convolucionales">
+      <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Redes Convolucionales">
       <h3>Ejemplo 1</h3>
       <p>Redes convolucionales aplicadas a imágenes satelitales.</p>
     </div>
     <div class="card" onclick="window.open('#', '_blank')">
-      <img src="https://via.placeholder.com/260x140.png?text=YOLO+Geoespacial" alt="YOLO Geoespacial">
+      <img src="https://images.unsplash.com/photo-1629909613654-28e377c0b8e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="YOLO Geoespacial">
       <h3>Ejemplo 2</h3>
       <p>Detección de objetos geoespaciales con YOLO.</p>
     </div>
