@@ -221,8 +221,8 @@
 <body>
 
   <header>
-    <h1>Geoanálisis - Luis Lacán</h1>
-    <p>Explorando datos geoespaciales, Machine Learning y más</p>
+    <h1>GisGreen</h1>
+    <p>"Bienvenido al fascinante mundo del análisis de información geoespacial! Aquí encontrarás una colección de notebooks y otros recursos de aprendizaje que te familiarizarán con herramientas como ArcGIS Online, Google Colab, Google Earth Engine y bases de datos espaciales, entre otras"</p>
   </header>
 
   <nav>
@@ -259,7 +259,7 @@
       </div>
       <div class="card">
         <h3>Ejemplo 2</h3>
-        <p>Monitoreo de cambios forestales con imágenes Landsat.</p>
+        <p>Monitoreo de cambios forestales con imágenes Landsat/Sentinel/Planet.</p>
       </div>
     </div>
   </section>
@@ -269,7 +269,7 @@
     <div class="cards">
       <div class="card">
         <h3>Ejemplo 1</h3>
-        <p>Uso de PostGIS para almacenar y consultar datos geoespaciales.</p>
+        <p>Uso de PostGIS / SQL Server para almacenar y consultar datos geoespaciales.</p>
       </div>
       <div class="card">
         <h3>Ejemplo 2</h3>
@@ -334,26 +334,6 @@
     </div>
   </section>
 
-  <!-- Sección de esquema adicional con cajas -->
-  <h1 style="text-align:center; margin-top:50px;">Esquema con Tema Oscuro</h1>
-  <div class="container">
-    <div class="box">
-      <img src="https://via.placeholder.com/220x120.png?text=Ejemplo+1" alt="Ejemplo 1">
-      <h2>Ejemplo 1</h2>
-      <p>Descripción breve del ejemplo 1.</p>
-    </div>
-    <div class="box">
-      <img src="https://via.placeholder.com/220x120.png?text=Ejemplo+2" alt="Ejemplo 2">
-      <h2>Ejemplo 2</h2>
-      <p>Descripción breve del ejemplo 2.</p>
-    </div>
-    <div class="box">
-      <img src="https://via.placeholder.com/220x120.png?text=Ejemplo+3" alt="Ejemplo 3">
-      <h2>Ejemplo 3</h2>
-      <p>Descripción breve del ejemplo 3.</p>
-    </div>
-  </div>
-
   <!-- Sección de redes sociales -->
  <div class="social">
   <h3>Sígueme en redes sociales</h3>
@@ -363,8 +343,7 @@
 </div>
 
   <footer>
-    © 2025 Luis Lacán - Geoanálisis
-  </footer>
+    © 2025 Luis Lacán - GisGreen - luis.lacan@gmail.com
 
 </body>
 </html>
