@@ -268,35 +268,24 @@
   </section>
 
   <!-- Footer -->
-  <footer style="background:#1e1e1e; color:#00bcd4; padding:40px 20px; text-align:center;">
-    <h2 style="margin-bottom:10px;">Luis Lacán</h2>
-    <p style="margin-bottom:25px; color:#ccc;">Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
-    
-    <div class="socials" style="margin-bottom:25px;">
-      <!-- LinkedIn -->
-      <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <!-- GitHub -->
-      <a href="https://github.com" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
-      <!-- Twitter/X -->
-      <a href="https://twitter.com" target="_blank">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <!-- Correo -->
-      <a href="mailto:luis.lacan@gmail.com">
-        <i class="fas fa-envelope"></i>
-      </a>
-      <!-- WhatsApp -->
-      <a href="https://wa.me/50231767274" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-    </div>
-
-    <p style="color:#888; font-size:14px;">© 2025 Luis Lacán - GisGreen - luis.lacan@gmail.com</p>
-  </footer>
+<footer>
+  <h2>Luis Lacán</h2>
+  <p>Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
+  <div class="socials">
+    <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://twitter.com" target="_blank">
+      <i class="fab fa-x-twitter"></i>
+    </a>
+    <a href="mailto:luis.lacan@gmail.com">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+</footer>
 
 </body>
 </html>
