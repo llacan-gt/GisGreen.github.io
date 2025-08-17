@@ -2,12 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-pM5xK3xC7n1V8XbCw6JzQFdD8Jn6eX+PhU+6dMI3GYYdD9cTz2nI7V9/kYXeZq3eTvjFS3zz1qV+rmFfiN6/4g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <title>Geoanálisis - Luis Lacán</title>
   <style>
     /* Estilos generales */
     body {
@@ -135,158 +130,187 @@
     }
     .card h3 { margin: 0 0 10px; color: #00eaff; }
     .card p { color: #ccc; font-size: 0.95em; }
-
-    /* Footer Redes Sociales */
-    .socials a {
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .social {
+      margin-top: 40px;
+      padding: 20px;
+      background: #1e1e1e;
+      border-top: 2px solid #00bcd4;
+      text-align: center;
+    }
+    .social h3 { color: #00bcd4; margin-bottom: 15px; }
+    .social a {
       margin: 0 10px;
+      text-decoration: none;
       color: #00bcd4;
-      font-size: 28px;
-      transition: transform 0.3s, color 0.3s;
+      font-size: 24px;
+      transition: color 0.3s;
     }
-    .socials a:hover {
-      color: #ffffff;
-      transform: scale(1.2);
-    }
+    .social a:hover { color: #ffffff; }
   </style>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-pM5xK3xC7n1V8XbCw6JzQFdD8Jn6eX+PhU+6dMI3GYYdD9cTz2nI7V9/kYXeZq3eTvjFS3zz1qV+rmFfiN6/4g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-  <header>
-    <h1>GisGreen</h1>
-    <p>"Bienvenido al fascinante mundo del análisis de información geoespacial! Aquí encontrarás una colección de notebooks y otros recursos de aprendizaje que te familiarizarán con herramientas como ArcGIS Online, Google Colab, Google Earth Engine y bases de datos espaciales, entre otras"</p>
-  </header>
+<header>
+  <h1>GisGreen</h1>
+  <p>"Bienvenido al fascinante mundo del análisis de información geoespacial! Aquí encontrarás notebooks y recursos de aprendizaje sobre ArcGIS Online, Google Colab, Google Earth Engine y bases de datos espaciales."</p>
+</header>
 
-  <nav>
-    <a href="#colab">Google Colab</a>
-    <a href="#gee">Google Earth Engine</a>
-    <a href="#bases">Bases de Datos Espaciales</a>
-    <a href="#datos">Ingeniería de Datos</a>
-    <a href="#sensores">Sensores Remotos</a>
-    <a href="#ml">Machine Learning</a>
-    <a href="#dl">Deep Learning</a>
-  </nav>
+<nav>
+  <a href="#colab">Google Colab</a>
+  <a href="#gee">Google Earth Engine</a>
+  <a href="#bases">Bases de Datos Espaciales</a>
+  <a href="#datos">Ingeniería de Datos</a>
+  <a href="#sensores">Sensores Remotos</a>
+  <a href="#ml">Machine Learning</a>
+  <a href="#dl">Deep Learning</a>
+</nav>
 
-  <!-- Secciones principales -->
+<!-- Google Colab -->
 <section id="colab">
   <h2>Google Colab</h2>
   <div class="cards">
-    <!-- Ejemplo 1 con imagen y enlace usando onclick -->
-    <div class="card" style="cursor:pointer;" onclick="window.open('https://colab.research.google.com/tu_notebook.ipynb', '_blank')">
-      <img src="https://via.placeholder.com/260x140.png?text=Google+Colab" alt="Google Colab" style="width:100%; border-radius:10px; margin-bottom:10px;">
+    <!-- Ejemplo 1 -->
+    <div class="card" onclick="window.open('https://colab.research.google.com/tu_notebook.ipynb', '_blank')">
+      <img src="https://via.placeholder.com/260x140.png?text=Google+Colab" alt="Google Colab">
       <h3>Ejemplo 1</h3>
       <p>Cuaderno de introducción al análisis espacial en Google Colab.</p>
     </div>
 
     <!-- Ejemplo 2 -->
-    <div class="card">
+    <div class="card" onclick="window.open('https://colab.research.google.com/tu_otro_notebook.ipynb', '_blank')">
+      <img src="https://via.placeholder.com/260x140.png?text=Python+Satélites" alt="Python Satélites">
       <h3>Ejemplo 2</h3>
       <p>Procesamiento de imágenes satelitales en Python.</p>
     </div>
   </div>
 </section>
 
-  <section id="gee">
-    <h2>Google Earth Engine</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Ejemplo 1</h3>
-        <p>Clasificación de coberturas terrestres usando GEE.</p>
-      </div>
-      <div class="card">
-        <h3>Ejemplo 2</h3>
-        <p>Monitoreo de cambios forestales con imágenes Landsat/Sentinel/Planet.</p>
-      </div>
+<!-- Google Earth Engine -->
+<section id="gee">
+  <h2>Google Earth Engine</h2>
+  <div class="cards">
+    <div class="card" onclick="window.open('https://developers.google.com/earth-engine/tutorials', '_blank')">
+      <img src="https://via.placeholder.com/260x140.png?text=GEE+Tutorial" alt="GEE Tutorial">
+      <h3>Ejemplo 1</h3>
+      <p>Clasificación de coberturas terrestres usando GEE.</p>
     </div>
-  </section>
-
-  <section id="bases">
-    <h2>Bases de Datos Espaciales</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Ejemplo 1</h3>
-        <p>Uso de PostGIS / SQL Server para almacenar y consultar datos geoespaciales.</p>
-      </div>
-      <div class="card">
-        <h3>Ejemplo 2</h3>
-        <p>Visualización de capas espaciales desde bases de datos.</p>
-      </div>
+    <div class="card" onclick="window.open('https://developers.google.com/earth-engine/datasets', '_blank')">
+      <img src="https://via.placeholder.com/260x140.png?text=GEE+Datasets" alt="GEE Datasets">
+      <h3>Ejemplo 2</h3>
+      <p>Monitoreo de cambios forestales con imágenes Landsat/Sentinel/Planet.</p>
     </div>
-  </section>
-
-  <section id="datos">
-    <h2>Ingeniería de Datos</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Ejemplo 1</h3>
-        <p>Automatización de flujos de datos geoespaciales.</p>
-      </div>
-      <div class="card">
-        <h3>Ejemplo 2</h3>
-        <p>Optimización de pipelines de datos con Python.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="sensores">
-    <h2>Sensores Remotos</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Ejemplo 1</h3>
-        <p>Análisis multiespectral de imágenes satelitales.</p>
-      </div>
-      <div class="card">
-        <h3>Ejemplo 2</h3>
-        <p>Detección de cambios con radar de apertura sintética (SAR).</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="ml">
-    <h2>Machine Learning</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Ejemplo 1</h3>
-        <p>Predicción de uso del suelo con modelos supervisados.</p>
-      </div>
-      <div class="card">
-        <h3>Ejemplo 2</h3>
-        <p>Clasificación automática de coberturas terrestres.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="dl">
-    <h2>Deep Learning</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Ejemplo 1</h3>
-        <p>Redes convolucionales aplicadas a imágenes satelitales.</p>
-      </div>
-      <div class="card">
-        <h3>Ejemplo 2</h3>
-        <p>Detección de objetos geoespaciales con YOLO.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-<footer>
-  <h2>Luis Lacán</h2>
-  <p>Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
-  <div class="socials">
-    <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://github.com" target="_blank">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="https://twitter.com" target="_blank">
-      <i class="fab fa-x-twitter"></i>
-    </a>
-    <a href="mailto:luis.lacan@gmail.com">
-      <i class="fas fa-envelope"></i>
-    </a>
   </div>
+</section>
+
+<!-- Bases de Datos Espaciales -->
+<section id="bases">
+  <h2>Bases de Datos Espaciales</h2>
+  <div class="cards">
+    <div class="card" onclick="window.open('https://postgis.net/', '_blank')">
+      <img src="https://via.placeholder.com/260x140.png?text=PostGIS" alt="PostGIS">
+      <h3>Ejemplo 1</h3>
+      <p>Uso de PostGIS / SQL Server para almacenar y consultar datos geoespaciales.</p>
+    </div>
+    <div class="card" onclick="window.open('https://www.microsoft.com/en-us/sql-server', '_blank')">
+      <img src="https://via.placeholder.com/260x140.png?text=SQL+Server" alt="SQL Server">
+      <h3>Ejemplo 2</h3>
+      <p>Visualización de capas espaciales desde bases de datos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Ingeniería de Datos -->
+<section id="datos">
+  <h2>Ingeniería de Datos</h2>
+  <div class="cards">
+    <div class="card" onclick="window.open('#', '_blank')">
+      <img src="https://via.placeholder.com/260x140.png?text=Automatización" alt="Automatización">
+      <h3>Ejemplo 1</h3>
+      <p>Automatización de flujos de datos geoespaciales.</p>
+    </div>
+    <div class="card" onclick="window.open('#', '_blank')">
+      <img src="https://via.placeholder.com/260x140.png?text=Optimización" alt="Optimización">
+      <h3>Ejemplo 2</h3>
+      <p>Optimización de pipelines de datos con Python.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Sensores Remotos -->
+<section id="sensores">
+  <h2>Sensores Remotos</h2>
+  <div class="cards">
+    <div class="card" onclick="window.open('#', '_blank')">
+      <img src="https://via.placeholder.com/260x140.png?text=Multiespectral" alt="Multiespectral">
+      <h3>Ejemplo 1</h3>
+      <p>Análisis multiespectral de imágenes satelitales.</p>
+    </div>
+    <div class="card" onclick="window.open('#', '_blank')">
+      <img src="https://via.placeholder.com/260x140.png?text=SAR" alt="SAR">
+      <h3>Ejemplo 2</h3>
+      <p>Detección de cambios con radar de apertura sintética (SAR).</p>
+    </div>
+  </div>
+</section>
+
+<!-- Machine Learning -->
+<section id="ml">
+  <h2>Machine Learning</h2>
+  <div class="cards">
+    <div class="card" onclick="window.open('#', '_blank')">
+      <img src="https://via.placeholder.com/260x140.png?text=ML+Predicción" alt="ML Predicción">
+      <h3>Ejemplo 1</h3>
+      <p>Predicción de uso del suelo con modelos supervisados.</p>
+    </div>
+    <div class="card" onclick="window.open('#', '_blank')">
+      <img src="https://via.placeholder.com/260x140.png?text=ML+Clasificación" alt="ML Clasificación">
+      <h3>Ejemplo 2</h3>
+      <p>Clasificación automática de coberturas terrestres.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Deep Learning -->
+<section id="dl">
+  <h2>Deep Learning</h2>
+  <div class="cards">
+    <div class="card" onclick="window.open('#', '_blank')">
+      <img src="https://via.placeholder.com/260x140.png?text=Redes+Convolucionales" alt="Redes Convolucionales">
+      <h3>Ejemplo 1</h3>
+      <p>Redes convolucionales aplicadas a imágenes satelitales.</p>
+    </div>
+    <div class="card" onclick="window.open('#', '_blank')">
+      <img src="https://via.placeholder.com/260x140.png?text=YOLO+Geoespacial" alt="YOLO Geoespacial">
+      <h3>Ejemplo 2</h3>
+      <p>Detección de objetos geoespaciales con YOLO.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer style="background:#1e1e1e; color:#00bcd4; padding:40px 20px; text-align:center;">
+  <h2 style="margin-bottom:10px;">Luis Lacán</h2>
+  <p style="margin-bottom:25px; color:#ccc;">Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
+  
+  <div class="socials" style="margin-bottom:25px;">
+    <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px;"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px;"><i class="fab fa-github"></i></a>
+    <a href="https://twitter.com" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px;"><i class="fab fa-twitter"></i></a>
+    <a href="mailto:luis.lacan@gmail.com" style="margin:0 10px; color:#00bcd4; font-size:28px;"><i class="fas fa-envelope"></i></a>
+    <a href="https://wa.me/50231767274" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px;"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <p style="color:#888; font-size:14px;">© 2025 Luis Lacán - GisGreen - luis.lacan@gmail.com</p>
 </footer>
 
 </body>
