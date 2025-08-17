@@ -1,8 +1,15 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Geoanálisis - Luis Lacán</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-pM5xK3xC7n1V8XbCw6JzQFdD8Jn6eX+PhU+6dMI3GYYdD9cTz2nI7V9/kYXeZq3eTvjFS3zz1qV+rmFfiN6/4g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <style>
     /* Estilos generales */
     body {
@@ -130,69 +137,19 @@
     }
     .card h3 { margin: 0 0 10px; color: #00eaff; }
     .card p { color: #ccc; font-size: 0.95em; }
-    .social {
-      margin-top: 40px;
-      padding: 20px;
-      background: #1e1e1e;
-      border-top: 2px solid #00bcd4;
-      text-align: center;
-    }
-    .social h3 { color: #00bcd4; margin-bottom: 15px; }
-    .social a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #00bcd4;
-      font-size: 24px;
-      transition: color 0.3s;
-    }
-    .social a:hover { color: #ffffff; }
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
-    .box {
-      background-color: #1e1e1e;
-      border: 2px solid #00bcd4;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 15px;
-      width: 220px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 188, 212, 0.3);
-      transition: transform 0.3s;
-    }
-    .box:hover { transform: scale(1.05); }
-    .box img {
-      width: 100%;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
-    .box h2 { font-size: 18px; color: #f5f5f5; margin-bottom: 10px; }
-    .box p { font-size: 14px; color: #ccc; }
 
-    /* Social icons hover */
-    .social-icon {
+    /* Footer Redes Sociales */
+    .socials a {
       margin: 0 10px;
       color: #00bcd4;
       font-size: 28px;
-      display: inline-block;
       transition: transform 0.3s, color 0.3s;
     }
-    .social-icon:hover {
+    .socials a:hover {
       color: #ffffff;
       transform: scale(1.2);
     }
   </style>
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-pM5xK3xC7n1V8XbCw6JzQFdD8Jn6eX+PhU+6dMI3GYYdD9cTz2nI7V9/kYXeZq3eTvjFS3zz1qV+rmFfiN6/4g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -316,19 +273,24 @@
     <p style="margin-bottom:25px; color:#ccc;">Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
     
     <div class="socials" style="margin-bottom:25px;">
-      <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank" class="social-icon">
-        <i class="fab fa-linkedin"></i>
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
       </a>
-      <a href="https://github.com" target="_blank" class="social-icon">
+      <!-- GitHub -->
+      <a href="https://github.com" target="_blank">
         <i class="fab fa-github"></i>
       </a>
-      <a href="https://twitter.com" target="_blank" class="social-icon">
+      <!-- Twitter/X -->
+      <a href="https://twitter.com" target="_blank">
         <i class="fab fa-twitter"></i>
       </a>
-      <a href="mailto:luis.lacan@gmail.com" class="social-icon">
+      <!-- Correo -->
+      <a href="mailto:luis.lacan@gmail.com">
         <i class="fas fa-envelope"></i>
       </a>
-      <a href="https://wa.me/50231767274" target="_blank" class="social-icon">
+      <!-- WhatsApp -->
+      <a href="https://wa.me/50231767274" target="_blank">
         <i class="fab fa-whatsapp"></i>
       </a>
     </div>
