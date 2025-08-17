@@ -299,12 +299,13 @@
   </section>
 
   <!-- Redes sociales -->
-  <div class="social">
-    <h3>Sígueme en redes sociales</h3>
-    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-  </div>
+<!-- Redes sociales -->
+<div class="social">
+  <h3>Sígueme en redes sociales</h3>
+  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank"><i class="fab fa-linkedin"></i></a>
+</div>
 
   <footer>
     © 2025 Luis Lacán - GisGreen - luis.lacan@gmail.com
