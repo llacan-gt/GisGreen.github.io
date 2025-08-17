@@ -174,6 +174,19 @@
     }
     .box h2 { font-size: 18px; color: #f5f5f5; margin-bottom: 10px; }
     .box p { font-size: 14px; color: #ccc; }
+
+    /* Social icons hover */
+    .social-icon {
+      margin: 0 10px;
+      color: #00bcd4;
+      font-size: 28px;
+      display: inline-block;
+      transition: transform 0.3s, color 0.3s;
+    }
+    .social-icon:hover {
+      color: #ffffff;
+      transform: scale(1.2);
+    }
   </style>
 
   <!-- Font Awesome -->
@@ -297,41 +310,31 @@
     </div>
   </section>
 
-  <!-- Redes sociales -->
-<footer style="background:#1e1e1e; color:#00bcd4; padding:40px 20px; text-align:center;">
-  <h2 style="margin-bottom:10px;">Luis Lacán</h2>
-  <p style="margin-bottom:25px; color:#ccc;">Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
-  
-  <div class="socials" style="margin-bottom:25px;">
-    <!-- LinkedIn -->
-    <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px; transition:0.3s;">
-      <i class="fab fa-linkedin"></i>
-    </a>
+  <!-- Footer -->
+  <footer style="background:#1e1e1e; color:#00bcd4; padding:40px 20px; text-align:center;">
+    <h2 style="margin-bottom:10px;">Luis Lacán</h2>
+    <p style="margin-bottom:25px; color:#ccc;">Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
     
-    <!-- GitHub -->
-    <a href="https://github.com" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px; transition:0.3s;">
-      <i class="fab fa-github"></i>
-    </a>
-    
-    <!-- Twitter (X) -->
-    <a href="https://twitter.com" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px; transition:0.3s;">
-      <i class="fab fa-twitter"></i>
-    </a>
-    
-    <!-- Correo -->
-    <a href="mailto:luis.lacan@gmail.com" style="margin:0 10px; color:#00bcd4; font-size:28px; transition:0.3s;">
-      <i class="fas fa-envelope"></i>
-    </a>
-    
-    <!-- WhatsApp -->
-    <a href="https://wa.me/50231767274" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px; transition:0.3s;">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-  </div>
+    <div class="socials" style="margin-bottom:25px;">
+      <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com" target="_blank" class="social-icon">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://twitter.com" target="_blank" class="social-icon">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="mailto:luis.lacan@gmail.com" class="social-icon">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://wa.me/50231767274" target="_blank" class="social-icon">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
 
-  <p style="color:#888; font-size:14px;">© 2025 Luis Lacán - GisGreen - luis.lacan@gmail.com</p>
-</footer>
-
+    <p style="color:#888; font-size:14px;">© 2025 Luis Lacán - GisGreen - luis.lacan@gmail.com</p>
+  </footer>
 
 </body>
 </html>
