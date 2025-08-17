@@ -308,6 +308,17 @@
       <a href="mailto:luis.lacan@gmail.com">✉</a>
 </div>
 
+ <footer>
+    <h2>Lluis Lacán</h2>
+    <p>Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
+    <div class="socials">
+      <a href="https://linkedin.com" target="_blank">in</a>
+      <a href="https://github.com" target="_blank">GH</a>
+      <a href="https://twitter.com" target="_blank">X</a>
+      <a href="mailto:luis.lacan@gmail.com">✉</a>
+    </div>
+  </footer>
+
   <footer>
     © 2025 Luis Lacán - GisGreen - luis.lacan@gmail.com
   </footer>
