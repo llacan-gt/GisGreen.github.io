@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -299,29 +298,27 @@
   </section>
 
   <!-- Redes sociales -->
-<!-- Redes sociales -->
-<div class="social">
-  <h3>Sígueme en redes sociales</h3>
-      <a href="https://linkedin.com" target="_blank">in</a>
-      <a href="https://github.com" target="_blank">GH</a>
-      <a href="https://twitter.com" target="_blank">X</a>
-      <a href="mailto:luis.lacan@gmail.com">✉</a>
-</div>
+<footer style="background:#1e1e1e; color:#00bcd4; padding:40px 20px; text-align:center;">
+  <h2 style="margin-bottom:10px;">Luis Lacán</h2>
+  <p style="margin-bottom:25px; color:#ccc;">Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
+  
+  <div class="socials" style="margin-bottom:25px;">
+    <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px; transition:0.3s;">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px; transition:0.3s;">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://twitter.com" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px; transition:0.3s;">
+      <i class="fab fa-x-twitter"></i>
+    </a>
+    <a href="mailto:luis.lacan@gmail.com" style="margin:0 10px; color:#00bcd4; font-size:28px; transition:0.3s;">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
 
- <footer>
-    <h2>Lluis Lacán</h2>
-    <p>Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
-    <div class="socials">
-      <a href="https://linkedin.com" target="_blank">in</a>
-      <a href="https://github.com" target="_blank">GH</a>
-      <a href="https://twitter.com" target="_blank">X</a>
-      <a href="mailto:luis.lacan@gmail.com">✉</a>
-    </div>
-  </footer>
-
-  <footer>
-    © 2025 Luis Lacán - GisGreen - luis.lacan@gmail.com
-  </footer>
+  <p style="color:#888; font-size:14px;">© 2025 Luis Lacán - GisGreen - luis.lacan@gmail.com</p>
+</footer>
 
 </body>
 </html>
