@@ -280,5 +280,113 @@
     © 2025 Luis Lacán - Geoanálisis
   </footer>
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esquema con Tema Oscuro</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      color: #00bcd4;
+      margin-top: 20px;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .box {
+      background-color: #1e1e1e;
+      border: 2px solid #00bcd4;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 15px;
+      width: 220px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 188, 212, 0.3);
+      transition: transform 0.3s;
+    }
+    .box:hover {
+      transform: scale(1.05);
+    }
+    .box img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .box h2 {
+      font-size: 18px;
+      color: #f5f5f5;
+      margin-bottom: 10px;
+    }
+    .box p {
+      font-size: 14px;
+      color: #ccc;
+    }
+    /* Sección de redes sociales */
+    .social {
+      margin-top: 40px;
+      padding: 20px;
+      background: #1e1e1e;
+      border-top: 2px solid #00bcd4;
+    }
+    .social h3 {
+      color: #00bcd4;
+      margin-bottom: 15px;
+    }
+    .social a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #00bcd4;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+    .social a:hover {
+      color: #ffffff;
+    }
+  </style>
+  <!-- Cargar íconos de redes sociales -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>Esquema con Tema Oscuro</h1>
+  <div class="container">
+    <div class="box">
+      <img src="https://via.placeholder.com/220x120.png?text=Ejemplo+1" alt="Ejemplo 1">
+      <h2>Ejemplo 1</h2>
+      <p>Descripción breve del ejemplo 1.</p>
+    </div>
+    <div class="box">
+      <img src="https://via.placeholder.com/220x120.png?text=Ejemplo+2" alt="Ejemplo 2">
+      <h2>Ejemplo 2</h2>
+      <p>Descripción breve del ejemplo 2.</p>
+    </div>
+    <div class="box">
+      <img src="https://via.placeholder.com/220x120.png?text=Ejemplo+3" alt="Ejemplo 3">
+      <h2>Ejemplo 3</h2>
+      <p>Descripción breve del ejemplo 3.</p>
+    </div>
+  </div>
+
+  <!-- Sección de redes sociales -->
+  <div class="social">
+    <h3>Sígueme en redes sociales</h3>
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
 </body>
 </html>
