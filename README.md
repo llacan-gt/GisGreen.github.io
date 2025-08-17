@@ -305,6 +305,8 @@
   <h2 style="margin-bottom:10px;">Luis Lacán</h2>
   <p style="margin-bottom:25px; color:#ccc;">Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <div class="socials" style="margin-bottom:25px;">
     <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank" style="margin:0 10px; color:#00bcd4; font-size:28px; text-decoration:none;">
       <i class="fab fa-linkedin-in"></i>
