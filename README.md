@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -304,7 +303,7 @@
 <!-- Footer con iconos funcionales -->
 <footer>
   <h2>Luis Lacán</h2>
-  <p>Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
+  <p>Geomática | Especialista SIG | Innovación con IA</p>
   
   <div class="social-icons">
     <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank">
@@ -312,9 +311,6 @@
     </a>
     <a href="https://github.com" target="_blank">
       <i class="fab fa-github"></i>
-    </a>
-    <a href="https://twitter.com" target="_blank">
-      <i class="fab fa-twitter"></i>
     </a>
     <a href="mailto:luis.lacan@gmail.com">
       <i class="fas fa-envelope"></i>
