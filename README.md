@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -139,28 +139,31 @@
       margin-bottom: 10px;
       border: 1px solid rgba(0,234,255,0.2);
     }
-    .social {
-      margin-top: 40px;
-      padding: 20px;
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin: 30px 0;
+    }
+    .social-icons a {
+      color: #00bcd4;
+      font-size: 28px;
+      transition: all 0.3s;
+    }
+    .social-icons a:hover {
+      color: #ffffff;
+      transform: scale(1.2);
+    }
+    footer {
       background: #1e1e1e;
-      border-top: 2px solid #00bcd4;
+      color: #00bcd4;
+      padding: 40px 20px;
       text-align: center;
     }
-    .social h3 { color: #00bcd4; margin-bottom: 15px; }
-    .social a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #00bcd4;
-      font-size: 24px;
-      transition: color 0.3s;
-    }
-    .social a:hover { color: #ffffff; }
   </style>
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-pM5xK3xC7n1V8XbCw6JzQFdD8Jn6eX+PhU+6dMI3GYYdD9cTz2nI7V9/kYXeZq3eTvjFS3zz1qV+rmFfiN6/4g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Awesome actualizado -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -183,14 +186,11 @@
 <section id="colab">
   <h2>Google Colab</h2>
   <div class="cards">
-    <!-- Ejemplo 1 -->
     <div class="card" onclick="window.open('https://colab.research.google.com/tu_notebook.ipynb', '_blank')">
       <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Análisis espacial">
       <h3>Ejemplo 1</h3>
       <p>Cuaderno de introducción al análisis espacial en Google Colab.</p>
     </div>
-
-    <!-- Ejemplo 2 -->
     <div class="card" onclick="window.open('https://colab.research.google.com/tu_otro_notebook.ipynb', '_blank')">
       <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Imágenes satelitales">
       <h3>Ejemplo 2</h3>
@@ -301,25 +301,25 @@
   </div>
 </section>
 
-<!-- Footer -->
-<footer style="background:#1e1e1e; color:#00bcd4; padding:40px 20px; text-align:center;">
-  <h2 style="margin-bottom:10px;">Luis Lacán</h2>
-  <p style="margin-bottom:25px; color:#ccc;">Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
+<!-- Footer con iconos funcionales -->
+<footer>
+  <h2>Luis Lacán</h2>
+  <p>Especialista en Geomática | Análisis Espacial | Innovación con IA</p>
   
-  <div class="social-icons" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 25px;">
-    <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank" style="color:#00bcd4; font-size:28px; text-decoration:none;">
-      <i class="fab fa-linkedin-in"></i>
+  <div class="social-icons">
+    <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank">
+      <i class="fab fa-linkedin"></i>
     </a>
-    <a href="https://github.com" target="_blank" style="color:#00bcd4; font-size:28px; text-decoration:none;">
+    <a href="https://github.com" target="_blank">
       <i class="fab fa-github"></i>
     </a>
-    <a href="https://twitter.com" target="_blank" style="color:#00bcd4; font-size:28px; text-decoration:none;">
+    <a href="https://twitter.com" target="_blank">
       <i class="fab fa-twitter"></i>
     </a>
-    <a href="mailto:luis.lacan@gmail.com" style="color:#00bcd4; font-size:28px; text-decoration:none;">
+    <a href="mailto:luis.lacan@gmail.com">
       <i class="fas fa-envelope"></i>
     </a>
-    <a href="https://wa.me/50231767274" target="_blank" style="color:#00bcd4; font-size:28px; text-decoration:none;">
+    <a href="https://wa.me/50231767274" target="_blank">
       <i class="fab fa-whatsapp"></i>
     </a>
   </div>
