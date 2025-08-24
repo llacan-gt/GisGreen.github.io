@@ -7,7 +7,7 @@
     /* Estilos generales */
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', Aharoni, Geneva, Verdana, sans-serif;
       background-color: #0a0a0a;
       color: #f5f5f5;
       line-height: 1.6;
@@ -187,8 +187,8 @@
   <div class="cards">
     <div class="card" onclick="window.open('https://colab.research.google.com/tu_notebook.ipynb', '_blank')">
       <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Análisis espacial">
-      <h3>Ejemplo 1</h3>
-      <p>Cuaderno de introducción al análisis espacial en Google Colab.</p>
+      <h3>Imagenes Sentinel-2</h3>
+      <p>Visualizacion de imagenes Sentinel-2 mediante STAC y la grilla H3.</p>
     </div>
     <div class="card" onclick="window.open('https://colab.research.google.com/tu_otro_notebook.ipynb', '_blank')">
       <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Imágenes satelitales">
