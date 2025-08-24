@@ -187,13 +187,16 @@
   <div class="cards">
   <h3>Mapas interactivos</h3>
   <p>Exploración de mapas interactivos creados con Python en Google Colab.</p>
-  <!-- Iframe para mostrar el notebook dentro de tu página -->
   <iframe 
-    src="https://colab.research.google.com/github/llacan-gt/GisGreen.github.io/blob/main/Mapas_interactivos_con_python.ipynb" 
+    src="https://nbviewer.org/github/llacan-gt/GisGreen.github.io/blob/main/Mapas_interactivos_con_python.ipynb" 
     width="100%" 
     height="600px" 
-    style="border:1px solid #ccc; border-radius: 10px;">
+    style="border:1px solid #ccc; border-radius:10px;">
   </iframe>
+  <p style="margin-top:10px;">
+    👉 <a href="https://colab.research.google.com/github/llacan-gt/GisGreen.github.io/blob/main/Mapas_interactivos_con_python.ipynb" target="_blank">
+    Abrir en Google Colab</a>
+  </p>
 </div>
     <div class="card" onclick="window.open('https://colab.research.google.com/tu_otro_notebook.ipynb', '_blank')">
       <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Imágenes satelitales">
