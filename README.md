@@ -185,7 +185,7 @@
 <section id="colab">
   <h2>Google Colab</h2>
   <div class="cards">
-  <h3>Mapas interactivos</h3>
+  <h3>Visualizacion de Mapas Interactivos</h3>
   <p>Exploración de mapas interactivos creados con Python en Google Colab.</p>
   <iframe 
     src="https://nbviewer.org/github/llacan-gt/GisGreen.github.io/blob/main/Mapas_interactivos_con_python.ipynb" 
