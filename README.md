@@ -195,6 +195,11 @@
       <h3>Ejemplo 2</h3>
       <p>Procesamiento de imágenes satelitales en Python.</p>
     </div>
+    <div class="card" onclick="window.open('https://colab.research.google.com/tu_otro_notebook.ipynb', '_blank')">
+      <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Imágenes satelitales">
+      <h3>Ejemplo 2</h3>
+      <p>Clasificacion de imagenes satelitales con Random Forest.</p>
+    </div>
   </div>
 </section>
 
