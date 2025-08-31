@@ -4,7 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Geoanálisis - Luis Lacán</title>
   <style>
-    /* Estilos generales */
     body {
       margin: 0;
       font-family: 'Segoe UI', Aharoni, Geneva, Verdana, sans-serif;
@@ -102,13 +101,16 @@
     }
     .card {
       background: #1e293b;
-      padding: 25px;
+      padding: 20px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.6);
       transition: transform 0.4s ease, box-shadow 0.4s, background 0.4s;
       cursor: pointer;
       position: relative;
       overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
     .card::before {
       content: "";
@@ -128,7 +130,7 @@
       background: #243447;
       box-shadow: 0 6px 20px rgba(0,234,255,0.4);
     }
-    .card h3 { margin: 0 0 10px; color: #00eaff; }
+    .card h3 { margin: 10px 0; color: #00eaff; }
     .card p { color: #ccc; font-size: 0.95em; }
     .card img {
       width: 100%;
@@ -160,8 +162,6 @@
       text-align: center;
     }
   </style>
-
-  <!-- Font Awesome actualizado -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -185,39 +185,21 @@
 <section id="colab">
   <h2>Google Colab</h2>
   <div class="cards">
-  <h3>Visualizacion de Mapas Interactivos</h3>
-  <p>Exploración de mapas interactivos creados con Python en Google Colab.</p>
-  <iframe 
-    src="https://nbviewer.org/github/llacan-gt/GisGreen.github.io/blob/main/Mapas_interactivos_con_python.ipynb" 
-    width="100%" 
-    height="600px" 
-    style="border:1px solid #ccc; border-radius:10px;">
-  </iframe>
-  <p style="margin-top:10px;">
-    👉 <a href="https://colab.research.google.com/github/llacan-gt/GisGreen.github.io/blob/main/Mapas_interactivos_con_python.ipynb" target="_blank">
-    Abrir en Google Colab</a>
-  </p>
-</div>
-    <div class="card" onclick="window.open('https://colab.research.google.com/tu_otro_notebook.ipynb', '_blank')">
-      <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Imágenes satelitales">
+    <a href="https://nbviewer.org/github/llacan-gt/GisGreen.github.io/blob/main/Mapas_interactivos_con_python.ipynb" target="_blank" class="card">
+      <img src="https://miro.medium.com/v2/resize:fit:720/1*eA0ssQKV9LaOj6R1PBwD5w.png" alt="Google Colab">
+      <h3>Visualización de Mapas Interactivos</h3>
+      <p>Exploración de mapas interactivos creados con Python en Google Colab.</p>
+    </a>
+    <a href="https://colab.research.google.com/tu_otro_notebook.ipynb" target="_blank" class="card">
+      <img src="https://jupyter.org/assets/main-logo.svg" alt="Python Notebook">
       <h3>Ejemplo 2</h3>
       <p>Procesamiento de imágenes satelitales en Python.</p>
-    </div>
-    <div class="card" onclick="window.open('https://colab.research.google.com/tu_otro_notebook.ipynb', '_blank')">
-      <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Imágenes satelitales">
+    </a>
+    <a href="https://colab.research.google.com/tu_otro_notebook.ipynb" target="_blank" class="card">
+      <img src="https://jupyter.org/assets/main-logo.svg" alt="Clasificación RF">
       <h3>Ejemplo 3</h3>
-      <p>Clasificacion de imagenes satelitales con Random Forest.</p>
-    </div>
-    <div class="card" onclick="window.open('https://colab.research.google.com/tu_otro_notebook.ipynb', '_blank')">
-      <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Imágenes satelitales">
-      <h3>Ejemplo 4</h3>
-      <p>Clasificacion de imagenes satelitales con Random Forest.</p>
-    </div>
-    <div class="card" onclick="window.open('https://colab.research.google.com/tu_otro_notebook.ipynb', '_blank')">
-      <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Imágenes satelitales">
-      <h3>Ejemplo 5</h3>
-      <p>Clasificacion de imagenes satelitales con Random Forest.</p>
-    </div>
+      <p>Clasificación de imágenes satelitales con Random Forest.</p>
+    </a>
   </div>
 </section>
 
@@ -225,16 +207,16 @@
 <section id="gee">
   <h2>Google Earth Engine</h2>
   <div class="cards">
-    <div class="card" onclick="window.open('https://developers.google.com/earth-engine/tutorials', '_blank')">
-      <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Clasificación de coberturas">
+    <a href="https://code.earthengine.google.com/c7c033c19f9598ccc9ed6a1a0112955a" target="_blank" class="card">
+      <img src="https://developers.google.com/earth-engine/images/gee_logo.png" alt="Coberturas">
       <h3>Ejemplo 1</h3>
       <p>Clasificación de coberturas terrestres usando GEE.</p>
-    </div>
-    <div class="card" onclick="window.open('https://developers.google.com/earth-engine/datasets', '_blank')">
-      <img src="https://images.unsplash.com/photo-1446776899648-aa78eefe8ed0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Monitoreo forestal">
+    </a>
+    <a href="https://developers.google.com/earth-engine/datasets" target="_blank" class="card">
+      <img src="https://earthengine.google.com/static/images/hero.jpg" alt="Monitoreo forestal">
       <h3>Ejemplo 2</h3>
-      <p>Monitoreo de cambios forestales con imágenes Landsat/Sentinel/Planet.</p>
-    </div>
+      <p>Monitoreo de cambios forestales con Landsat/Sentinel.</p>
+    </a>
   </div>
 </section>
 
@@ -242,16 +224,16 @@
 <section id="bases">
   <h2>Bases de Datos Espaciales</h2>
   <div class="cards">
-    <div class="card" onclick="window.open('https://postgis.net/', '_blank')">
-      <img src="https://images.unsplash.com/photo-1551269901-5c5e14c25df7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="PostGIS">
+    <a href="https://postgis.net/" target="_blank" class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Postgis_logo.svg" alt="PostGIS">
       <h3>Ejemplo 1</h3>
-      <p>Uso de PostGIS / SQL Server para almacenar y consultar datos geoespaciales.</p>
-    </div>
-    <div class="card" onclick="window.open('https://www.microsoft.com/en-us/sql-server', '_blank')">
-      <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="SQL Server">
+      <p>Uso de PostGIS para consultar datos geoespaciales.</p>
+    </a>
+    <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" class="card">
+      <img src="https://www.sqldatapartners.com/wp-content/uploads/2019/01/sql-server-logo.png" alt="SQL Server">
       <h3>Ejemplo 2</h3>
       <p>Visualización de capas espaciales desde bases de datos.</p>
-    </div>
+    </a>
   </div>
 </section>
 
@@ -259,16 +241,16 @@
 <section id="datos">
   <h2>Ingeniería de Datos</h2>
   <div class="cards">
-    <div class="card" onclick="window.open('#', '_blank')">
-      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Automatización">
+    <a href="#" target="_blank" class="card">
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="Automatización">
       <h3>Ejemplo 1</h3>
       <p>Automatización de flujos de datos geoespaciales.</p>
-    </div>
-    <div class="card" onclick="window.open('#', '_blank')">
-      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Optimización">
+    </a>
+    <a href="#" target="_blank" class="card">
+      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" alt="Optimización">
       <h3>Ejemplo 2</h3>
       <p>Optimización de pipelines de datos con Python.</p>
-    </div>
+    </a>
   </div>
 </section>
 
@@ -276,16 +258,16 @@
 <section id="sensores">
   <h2>Sensores Remotos</h2>
   <div class="cards">
-    <div class="card" onclick="window.open('#', '_blank')">
-      <img src="https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Multiespectral">
+    <a href="#" target="_blank" class="card">
+      <img src="https://images.unsplash.com/photo-1502134249126-9f3755a50d78" alt="Multiespectral">
       <h3>Ejemplo 1</h3>
       <p>Análisis multiespectral de imágenes satelitales.</p>
-    </div>
-    <div class="card" onclick="window.open('#', '_blank')">
-      <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="SAR">
+    </a>
+    <a href="#" target="_blank" class="card">
+      <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef" alt="SAR">
       <h3>Ejemplo 2</h3>
-      <p>Detección de cambios con radar de apertura sintética (SAR).</p>
-    </div>
+      <p>Detección de cambios con radar SAR.</p>
+    </a>
   </div>
 </section>
 
@@ -293,16 +275,16 @@
 <section id="ml">
   <h2>Machine Learning</h2>
   <div class="cards">
-    <div class="card" onclick="window.open('#', '_blank')">
-      <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="ML Predicción">
+    <a href="#" target="_blank" class="card">
+      <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3" alt="ML">
       <h3>Ejemplo 1</h3>
       <p>Predicción de uso del suelo con modelos supervisados.</p>
-    </div>
-    <div class="card" onclick="window.open('#', '_blank')">
-      <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="ML Clasificación">
+    </a>
+    <a href="#" target="_blank" class="card">
+      <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e" alt="Clasificación">
       <h3>Ejemplo 2</h3>
       <p>Clasificación automática de coberturas terrestres.</p>
-    </div>
+    </a>
   </div>
 </section>
 
@@ -310,39 +292,28 @@
 <section id="dl">
   <h2>Deep Learning</h2>
   <div class="cards">
-    <div class="card" onclick="window.open('#', '_blank')">
-      <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Redes Convolucionales">
+    <a href="#" target="_blank" class="card">
+      <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485" alt="CNN">
       <h3>Ejemplo 1</h3>
       <p>Redes convolucionales aplicadas a imágenes satelitales.</p>
-    </div>
-    <div class="card" onclick="window.open('#', '_blank')">
-      <img src="https://images.unsplash.com/photo-1629909613654-28e377c0b8e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="YOLO Geoespacial">
+    </a>
+    <a href="#" target="_blank" class="card">
+      <img src="https://images.unsplash.com/photo-1629909613654-28e377c0b8e0" alt="YOLO">
       <h3>Ejemplo 2</h3>
       <p>Detección de objetos geoespaciales con YOLO.</p>
-    </div>
+    </a>
   </div>
 </section>
 
-<!-- Footer con iconos funcionales -->
 <footer>
   <h2>Luis Lacán</h2>
   <p>Geomática | Especialista SIG | Innovación con IA</p>
-  
   <div class="social-icons">
-    <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://github.com" target="_blank">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="mailto:luis.lacan@gmail.com">
-      <i class="fas fa-envelope"></i>
-    </a>
-    <a href="https://wa.me/50231767274" target="_blank">
-      <i class="fab fa-whatsapp"></i>
-    </a>
+    <a href="https://linkedin.com/in/luis-joel-lacan-lacan-5a959b56" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:luis.lacan@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://wa.me/50231767274" target="_blank"><i class="fab fa-whatsapp"></i></a>
   </div>
-
   <p style="color:#888; font-size:14px;">© 2025 Luis Lacán - GisGreen - luis.lacan@gmail.com</p>
 </footer>
 
