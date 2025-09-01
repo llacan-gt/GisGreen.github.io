@@ -6,7 +6,7 @@
     body {
     margin: 0;
     font-family: 'Segoe UI', Aharoni, Geneva, Verdana, sans-serif;
-    background: url("https://github.com/llacan-gt/geoimagenes/blob/main/Fondo%20de%20pantalla.png?raw=true") no-repeat center center fixed;
+    background: url("https://github.com/llacan-gt/geoimagenes/blob/main/Fondo_2.png?raw=true") no-repeat center center fixed;
     background-size: cover; /* Ajusta la imagen a toda la pantalla */
     color: #f5f5f5;
     line-height: 1.6;
