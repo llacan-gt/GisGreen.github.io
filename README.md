@@ -196,7 +196,7 @@
       <p>Procesamiento de imágenes satelitales en Python.</p>
     </a>
     <a href="https://colab.research.google.com/tu_otro_notebook.ipynb" target="_blank" class="card">
-      <img src="https://jupyter.org/assets/main-logo.svg" alt="Clasificación RF">
+      <img src="https://images-assets.nasa.gov/image/iss073e0509720/iss073e0509720~medium.jpg" alt="Clasificación RF">
       <h3>Ejemplo 3</h3>
       <p>Clasificación de imágenes satelitales con Random Forest.</p>
     </a>
