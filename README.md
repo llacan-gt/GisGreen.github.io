@@ -1,7 +1,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Geoanálisis - Luis Lacán</title>
   <style>
     body {
     margin: 0;
@@ -255,7 +254,7 @@
 </section>
 
 <!-- Ingenieria de Datos -->
-<section id="sensores">
+<section id="Ingenieria de Datos">
   <h2>Ingenieria de Datos</h2>
   <div class="cards">
     <a href="#" target="_blank" class="card">
@@ -316,5 +315,4 @@
   </div>
   <p style="color:#888; font-size:14px;">© 2025 Luis Lacán - GisGreen - luis.lacan@gmail.com</p>
 </footer>
-
 </body>
