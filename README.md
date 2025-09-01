@@ -174,9 +174,9 @@
 <nav>
   <a href="#colab">Google Colab</a>
   <a href="#gee">Google Earth Engine</a>
-  <a href="#bases">Bases de Datos Espaciales</a>
-  <a href="#datos">Ingeniería de Datos</a>
-  <a href="#sensores">Sensores Remotos</a>
+  <a href="#bases">Sensores Remotos</a>
+  <a href="#datos">Bases de Datos Espaciales</a>
+  <a href="#sensores">Ingenieria de Datos</a>
   <a href="#ml">Machine Learning</a>
   <a href="#dl">Deep Learning</a>
 </nav>
@@ -208,12 +208,12 @@
   <h2>Google Earth Engine</h2>
   <div class="cards">
     <a href="https://code.earthengine.google.com/c7c033c19f9598ccc9ed6a1a0112955a" target="_blank" class="card">
-      <img src="https://developers.google.com/earth-engine/images/gee_logo.png" alt="Coberturas">
+      <img src="https://github.com/llacan-gt/geoimagenes/blob/main/GEE_2.jpg?raw=true" alt="Coberturas">
       <h3>Ejemplo 1</h3>
       <p>Clasificación de coberturas terrestres usando GEE.</p>
     </a>
     <a href="https://developers.google.com/earth-engine/datasets" target="_blank" class="card">
-      <img src="https://earthengine.google.com/static/images/hero.jpg" alt="Monitoreo forestal">
+      <img src="https://github.com/llacan-gt/geoimagenes/blob/main/Imagenes%20Sentinel.jpg?raw=true" alt="Monitoreo forestal">
       <h3>Ejemplo 2</h3>
       <p>Monitoreo de cambios forestales con Landsat/Sentinel.</p>
     </a>
@@ -222,7 +222,7 @@
 
 <!-- Bases de Datos Espaciales -->
 <section id="bases">
-  <h2>Bases de Datos Espaciales</h2>
+  <h2>Sensores Remotos</h2>
   <div class="cards">
     <a href="https://postgis.net/" target="_blank" class="card">
       <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Postgis_logo.svg" alt="PostGIS">
@@ -239,34 +239,34 @@
 
 <!-- Ingeniería de Datos -->
 <section id="datos">
-  <h2>Ingeniería de Datos</h2>
+  <h2>Bases de Datos Espaciales</h2>
   <div class="cards">
     <a href="#" target="_blank" class="card">
       <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="Automatización">
       <h3>Ejemplo 1</h3>
-      <p>Automatización de flujos de datos geoespaciales.</p>
+      <p>Consultas SQL y ArcGis Pro.</p>
     </a>
     <a href="#" target="_blank" class="card">
       <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" alt="Optimización">
       <h3>Ejemplo 2</h3>
-      <p>Optimización de pipelines de datos con Python.</p>
+      <p>Consultas en PostGis.</p>
     </a>
   </div>
 </section>
 
 <!-- Sensores Remotos -->
 <section id="sensores">
-  <h2>Sensores Remotos</h2>
+  <h2>Ingenieria de Datos</h2>
   <div class="cards">
     <a href="#" target="_blank" class="card">
       <img src="https://images.unsplash.com/photo-1502134249126-9f3755a50d78" alt="Multiespectral">
       <h3>Ejemplo 1</h3>
-      <p>Análisis multiespectral de imágenes satelitales.</p>
+      <p>Programa COOPERNICUS.</p>
     </a>
     <a href="#" target="_blank" class="card">
       <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef" alt="SAR">
       <h3>Ejemplo 2</h3>
-      <p>Detección de cambios con radar SAR.</p>
+      <p>Programa LANDSAT.</p>
     </a>
   </div>
 </section>
