@@ -7,7 +7,7 @@
     margin: 0;
     font-family: 'Segoe UI', Aharoni, Geneva, Verdana, sans-serif;
     background: url("https://github.com/llacan-gt/geoimagenes/blob/main/Fondo_2.png?raw=true") no-repeat center center fixed;
-    background-size: cover; /* Ajusta la imagen a toda la pantalla */
+    background-size: cover; 
     color: #f5f5f5;
     line-height: 1.6;
     overflow-x: hidden;
@@ -168,7 +168,7 @@
 
 <header>
   <h1>GisGreen</h1>
-  <p>"Bienvenido al fascinante mundo del análisis de información geoespacial! Aquí encontrarás notebooks y recursos de aprendizaje sobre ArcGIS Online, Google Colab, Google Earth Engine y bases de datos espaciales."</p>
+  <p>"Bienvenido al fascinante mundo del análisis de información geoespacial!"</p>
 </header>
 
 <nav>
@@ -318,4 +318,3 @@
 </footer>
 
 </body>
-</html>
