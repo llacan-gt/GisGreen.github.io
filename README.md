@@ -186,7 +186,7 @@
   <h2>Google Colab</h2>
   <div class="cards">
     <a href="https://nbviewer.org/github/llacan-gt/GisGreen.github.io/blob/main/Mapas_interactivos_con_python.ipynb" target="_blank" class="card">
-      <img src="https://github.com/llacan-gt/GisGreen.github.io/commit/94c732351072df2e1b8e01854edab44aa2f7b4d2">
+      <img src="https://GisGreen.github.io/imagenes/Maps.png">
       <h3>Visualización de Mapas Interactivos</h3>
       <p>Exploración de mapas interactivos creados con Python en Google Colab.</p>
     </a>
