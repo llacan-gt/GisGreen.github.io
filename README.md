@@ -1,16 +1,17 @@
-<html lang="es">
+<img width="2400" height="813" alt="image" src="https://github.com/user-attachments/assets/615ab8e7-dd0f-4a70-b8d1-c63e5314307f" /><html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Geoanálisis - Luis Lacán</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Aharoni, Geneva, Verdana, sans-serif;
-      background-color: #0a0a0a;
-      color: #f5f5f5;
-      line-height: 1.6;
-      overflow-x: hidden;
+    margin: 0;
+    font-family: 'Segoe UI', Aharoni, Geneva, Verdana, sans-serif;
+    background: url("https://github.com/llacan-gt/geoimagenes/blob/main/Fondo%20de%20pantalla.png?raw=true") no-repeat center center fixed;
+    background-size: cover; /* Ajusta la imagen a toda la pantalla */
+    color: #f5f5f5;
+    line-height: 1.6;
+    overflow-x: hidden;
     }
     header {
       background: linear-gradient(270deg, #0d1b2a, #1b263b, #0d1b2a);
@@ -220,24 +221,24 @@
   </div>
 </section>
 
-<!-- Bases de Datos Espaciales -->
+<!-- Sensores Remotos -->
 <section id="bases">
   <h2>Sensores Remotos</h2>
   <div class="cards">
     <a href="https://postgis.net/" target="_blank" class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Postgis_logo.svg" alt="PostGIS">
-      <h3>Ejemplo 1</h3>
-      <p>Uso de PostGIS para consultar datos geoespaciales.</p>
+      <img src="https://github.com/llacan-gt/geoimagenes/blob/main/academiacopernicus.jpg?raw=true" alt="PostGIS">
+      <h3>Programa COOPERNICUS</h3>
+      <p>Acceso al programa de Coopernicus para la obtencion de imagenes satelitales.</p>
     </a>
     <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" class="card">
       <img src="https://www.sqldatapartners.com/wp-content/uploads/2019/01/sql-server-logo.png" alt="SQL Server">
-      <h3>Ejemplo 2</h3>
-      <p>Visualización de capas espaciales desde bases de datos.</p>
+      <h3>Programa LANDSAT</h3>
+      <p>Acceso al programa NASA/USGS para la obtencion de imagenes satelitales.</p>
     </a>
   </div>
 </section>
 
-<!-- Ingeniería de Datos -->
+<!-- Base de Datos Espaciales -->
 <section id="datos">
   <h2>Bases de Datos Espaciales</h2>
   <div class="cards">
@@ -254,7 +255,7 @@
   </div>
 </section>
 
-<!-- Sensores Remotos -->
+<!-- Ingenieria de Datos -->
 <section id="sensores">
   <h2>Ingenieria de Datos</h2>
   <div class="cards">
