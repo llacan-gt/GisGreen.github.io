@@ -193,7 +193,7 @@
       <p>Exploración de mapas interactivos creados con Python en Google Colab.</p>
     </a>
     <a href="https://github.com/llacan-gt/notebooks.geoespacial/blob/main/Geometry_operations.ipynb" target="_blank" class="card">
-      <img src="https://jupyter.org/assets/main-logo.svg" alt="Python Notebook">
+      <img src="https://github.com/llacan-gt/geoimagenes/blob/main/Gemini_Generated_Image_rjawemrjawemrjaw.png?raw=true" alt="Python Notebook">
       <h3>datos Vectoriales</h3>
       <p>Manejo y Visualizacion de datos Vectoriales.</p>
     </a>
