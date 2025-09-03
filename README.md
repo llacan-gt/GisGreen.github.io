@@ -192,10 +192,10 @@
       <h3>Visualización de Mapas Interactivos</h3>
       <p>Exploración de mapas interactivos creados con Python en Google Colab.</p>
     </a>
-    <a href="https://colab.research.google.com/tu_otro_notebook.ipynb" target="_blank" class="card">
+    <a href="https://github.com/llacan-gt/notebooks.geoespacial/blob/main/Geometry_operations.ipynb" target="_blank" class="card">
       <img src="https://jupyter.org/assets/main-logo.svg" alt="Python Notebook">
-      <h3>Ejemplo 2</h3>
-      <p>Procesamiento de imágenes satelitales en Python.</p>
+      <h3>datos Vectoriales</h3>
+      <p>Manejo y Visualizacion de datos Vectoriales.</p>
     </a>
     <a href="https://colab.research.google.com/tu_otro_notebook.ipynb" target="_blank" class="card">
       <img src="https://images-assets.nasa.gov/image/iss073e0509720/iss073e0509720~medium.jpg" alt="Clasificación RF">
