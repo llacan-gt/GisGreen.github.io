@@ -16,22 +16,18 @@
       line-height: 1.6;
       overflow-x: hidden;
     }
-
     h1, h2, h3 {
       color: #38bdf8;
       text-align: center;
     }
-
     a {
       color: #38bdf8;
       text-decoration: none;
       transition: color 0.3s ease;
     }
-
     a:hover {
       color: #0ea5e9;
     }
-
     /* Header */
     header {
       background: rgba(15, 23, 42, 0.95);
@@ -40,7 +36,6 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.6);
       border-radius: 0 0 20px 20px;
     }
-
     /* Footer */
     footer {
       text-align: center;
@@ -51,7 +46,6 @@
       border-radius: 20px 20px 0 0;
       box-shadow: 0 -4px 12px rgba(0,0,0,0.6);
     }
-
     /* Secciones homogéneas */
     section {
       padding: 60px 20px;
@@ -60,12 +54,10 @@
       opacity: 0;
       transform: translateY(30px);
       animation: fadeUp 1s ease forwards;
-
       background: rgba(30, 41, 59, 0.95);
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.6);
     }
-
     /* Cards */
     .card-container {
       display: flex;
@@ -74,7 +66,6 @@
       gap: 20px;
       margin-top: 20px;
     }
-
     .card {
       background: rgba(51, 65, 85, 0.9);
       padding: 20px;
@@ -84,17 +75,14 @@
       transition: transform 0.3s ease, background 0.3s ease;
       box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     }
-
     .card:hover {
       transform: translateY(-8px);
       background: rgba(59, 130, 246, 0.9);
     }
-
     .card h3 {
       margin-bottom: 15px;
       color: #f8fafc;
     }
-
     /* Animaciones */
     @keyframes fadeUp {
       to {
