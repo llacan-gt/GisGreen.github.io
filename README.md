@@ -7,7 +7,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Aharoni, Geneva, Verdana, sans-serif;
-      background: url('https://github.com/llacan-gt/geoimagenes/blob/main/Gemini_Generated_Image_nzq3srnzq3srnzq3.png?raw=true') no-repeat center center fixed;
+      background: url('https://github.com/llacan-gt/geoimagenes/blob/main/Fondo_Gis_Green.png?raw=true') no-repeat center center fixed;
       background-size: cover;
       color: #f5f5f5;
       line-height: 1.6;
