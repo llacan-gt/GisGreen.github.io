@@ -150,7 +150,7 @@
     }
     .social-icons a {
       color: #00bcd4;
-      font-size: 28px;
+      font-size: 30px;
       transition: all 0.3s;
     }
     .social-icons a:hover {
