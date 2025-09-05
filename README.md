@@ -8,7 +8,7 @@
       font-family: 'Segoe UI', Aharoni, Geneva, Verdana, sans-serif;
       background: url('https://github.com/llacan-gt/geoimagenes/blob/main/Fondo_4.png?raw=true') no-repeat center center fixed;
       background-size: cover;
-      color: #f5f5f5;
+      color: #ffffff;
       line-height: 1.6;
       overflow-x: hidden;
     }
@@ -77,7 +77,7 @@
     section h2 {
       text-align: center;
       margin-bottom: 30px;
-      color: #00eaff;
+      color: #ffffff;
       font-size: 2em;
       position: relative;
     }
@@ -131,7 +131,7 @@
       background: #243447;
       box-shadow: 0 6px 20px rgba(0,234,255,0.4);
     }
-    .card h3 { margin: 10px 0; color: #00eaff; }
+    .card h3 { margin: 10px 0; color: #ffffff; }
     .card p { color: #ccc; font-size: 0.95em; }
     .card img {
       width: 100%;
@@ -148,7 +148,7 @@
       margin: 30px 0;
     }
     .social-icons a {
-      color: #00bcd4;
+      color: #ffffff;
       font-size: 30px;
       transition: all 0.3s;
     }
@@ -158,7 +158,7 @@
     }
     footer {
       background: #1e1e1e;
-      color: #00bcd4;
+      color: #ffffff;
       padding: 40px 20px;
       text-align: center;
     }
@@ -317,6 +317,4 @@
   </div>
   <p style="color:#888; font-size:14px;">© 2025 Luis Lacán - GisGreen - luis.lacan@gmail.com</p>
 </footer>
-
 </body>
-</html>
