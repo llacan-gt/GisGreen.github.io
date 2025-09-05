@@ -1,4 +1,3 @@
-<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,7 +67,7 @@
       transform: translateY(30px);
       animation: fadeUp 1s ease forwards;
       /* Recuadro homogéneo */
-      background: rgba(30, 41, 59, 0.95); 
+      background: rgba(30, 41, 59, 0.75); 
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.6);
     }
