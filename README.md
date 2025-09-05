@@ -26,7 +26,7 @@
     }
     header h1 {
       margin: 0;
-      color: #00eaff;
+      color: #ffffff;
       font-size: 2.5em;
       animation: glow 2s ease-in-out infinite alternate;
     }
@@ -104,7 +104,7 @@
       background: #1e293b;
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.7);
       transition: transform 0.4s ease, box-shadow 0.4s, background 0.4s;
       cursor: pointer;
       position: relative;
@@ -120,7 +120,7 @@
       left: -50%;
       width: 200%;
       height: 200%;
-      background: radial-gradient(circle, rgba(0,234,255,0.50), transparent 50%);
+      background: radial-gradient(circle, rgba(0,234,255,0.70), transparent 70%);
       transform: rotate(25deg);
       transition: opacity 0.4s;
       opacity: 0;
@@ -129,7 +129,7 @@
     .card:hover {
       transform: translateY(-8px) scale(1.02);
       background: #243447;
-      box-shadow: 0 6px 20px rgba(0,234,255,0.4);
+      box-shadow: 0 6px 20px rgba(0,234,255,0.7);
     }
     .card h3 { margin: 10px 0; color: #ffffff; }
     .card p { color: #ccc; font-size: 0.95em; }
@@ -139,7 +139,7 @@
       object-fit: cover;
       border-radius: 10px;
       margin-bottom: 10px;
-      border: 1px solid rgba(0,234,255,0.2);
+      border: 1px solid rgba(0,234,255,0.7);
     }
     .social-icons {
       display: flex;
