@@ -67,7 +67,7 @@
       transform: translateY(30px);
       animation: fadeUp 1s ease forwards;
       /* Recuadro homogéneo */
-      background: rgba(30, 41, 59, 0.75); 
+      background: rgba(30, 41, 59, 0.50); 
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.6);
     }
@@ -120,7 +120,7 @@
       left: -50%;
       width: 200%;
       height: 200%;
-      background: radial-gradient(circle, rgba(0,234,255,0.1), transparent 60%);
+      background: radial-gradient(circle, rgba(0,234,255,0.50), transparent 50%);
       transform: rotate(25deg);
       transition: opacity 0.4s;
       opacity: 0;
