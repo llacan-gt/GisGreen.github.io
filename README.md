@@ -1,10 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Geoanálisis - Luis Lacán</title>
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
       font-family: 'Segoe UI', Aharoni, Geneva, Verdana, sans-serif;
       background: url('https://github.com/llacan-gt/geoimagenes/blob/main/Fondo_4.png?raw=true') no-repeat center center fixed;
       background-size: cover;
@@ -18,6 +23,8 @@
       animation: gradientShift 12s ease infinite;
       padding: 40px 20px;
       text-align: center;
+      width: 100%;
+      position: relative;
     }
     @keyframes gradientShift {
       0% {background-position: 0% 50%;}
@@ -39,13 +46,50 @@
       font-size: 1.2em;
       color: #aaa;
     }
-    nav {
+    /* Contador de visitas en posición estratégica */
+    .visitor-counter {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      background: rgba(30, 41, 59, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+      z-index: 1000;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(0, 234, 255, 0.3);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .visitor-counter:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0, 234, 255, 0.4);
+    }
+    .visitor-counter h3 {
+      margin: 0 0 5px;
+      color: #00eaff;
+      font-size: 0.9em;
+    }
+    .counter-number {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 0 0 10px rgba(0, 234, 255, 0.7);
+    }
+    .counter-label {
+      font-size: 0.7em;
+      color: #aaa;
+      margin-top: 3px;
+    }
+    
+  nav {
       background: #1b263b;
       padding: 12px;
       text-align: center;
       position: sticky;
       top: 0;
       z-index: 10;
+      width: 100%;
     }
     nav a {
       color: #eee;
@@ -59,17 +103,104 @@
       color: #00eaff;
       transform: scale(1.1);
     }
-    section {
+    
+   /* Estilos para el carrusel */
+    .carousel-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 40px auto;
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+    }
+    .carousel {
+      display: flex;
+      transition: transform 0.5s ease;
+      height: 450px;
+    }
+    .carousel-item {
+      min-width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .carousel-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(13, 27, 42, 0.85);
+      padding: 20px;
+      text-align: center;
+    }
+    .carousel-caption h3 {
+      margin: 0 0 10px;
+      color: #00eaff;
+    }
+    .carousel-caption p {
+      margin: 0;
+      color: #eee;
+    }
+    .carousel-control {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 234, 255, 0.3);
+      color: white;
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 10;
+      transition: background 0.3s;
+    }
+    .carousel-control:hover {
+      background: rgba(0, 234, 255, 0.7);
+    }
+    .carousel-control.prev {
+      left: 15px;
+    }
+    .carousel-control.next {
+      right: 15px;
+    }
+    .carousel-indicators {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+    }
+    .carousel-indicator {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .carousel-indicator.active {
+      background: #00eaff;
+    }
+    
+  section {
       padding: 60px 20px;
       max-width: 1100px;
       margin: 40px auto;
       opacity: 0;
       transform: translateY(30px);
       animation: fadeUp 1s ease forwards;
-      /* Recuadro homogéneo */
-      background: rgba(30, 41, 59, 0.50); 
+      background: rgba(30, 41, 59, 0.85);
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      width: 90%;
     }
     @keyframes fadeUp {
       to { opacity: 1; transform: translateY(0); }
@@ -161,11 +292,19 @@
       color: #ffffff;
       padding: 40px 20px;
       text-align: center;
+      width: 100%;
     }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+
+<!-- Contador de visitas en posición estratégica -->
+<div class="visitor-counter">
+  <h3>VISITAS</h3>
+  <div class="counter-number" id="visitCount">0</div>
+  <div class="counter-label">Total</div>
+</div>
 
 <header>
   <h1>GisGreen</h1>
@@ -173,14 +312,49 @@
 </header>
 
 <nav>
+  <a href="#carrusel">Inicio</a>
   <a href="#colab">Google Colab</a>
   <a href="#gee">Google Earth Engine</a>
   <a href="#bases">Sensores Remotos</a>
-  <a href="#datos">Bases de Datos Espaciales</a>
-  <a href="#sensores">Ingenieria de Datos</a>
+  <a href="#datos">Bases de Datos</a>
+  <a href="#sensores">Ingenieria</a>
   <a href="#ml">Machine Learning</a>
   <a href="#dl">Deep Learning</a>
 </nav>
+
+<!-- Carrusel de imágenes -->
+<div class="carousel-container" id="carrusel">
+  <div class="carousel">
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Análisis Geoespacial">
+      <div class="carousel-caption">
+        <h3>Análisis Geoespacial</h3>
+        <p>Exploración de técnicas avanzadas para el análisis de información geográfica</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Google Earth Engine">
+      <div class="carousel-caption">
+        <h3>Google Earth Engine</h3>
+        <p>Procesamiento de imágenes satelitales a escala planetaria</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Machine Learning">
+      <div class="carousel-caption">
+        <h3>Machine Learning Geoespacial</h3>
+        <p>Aplicación de algoritmos de IA para el análisis de datos espaciales</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control prev" onclick="moveCarousel(-1)">&#10094;</button>
+  <button class="carousel-control next" onclick="moveCarousel(1)">&#10095;</button>
+  <div class="carousel-indicators">
+    <span class="carousel-indicator active" onclick="goToSlide(0)"></span>
+    <span class="carousel-indicator" onclick="goToSlide(1)"></span>
+    <span class="carousel-indicator" onclick="goToSlide(2)"></span>
+  </div>
+</div>
 
 <!-- Google Colab -->
 <section id="colab">
@@ -317,4 +491,66 @@
   </div>
   <p style="color:#888; font-size:14px;">© 2025 Luis Lacán - GisGreen - luis.lacan@gmail.com</p>
 </footer>
+
+<script>
+  // Carrusel de imágenes
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.carousel-item');
+  const indicators = document.querySelectorAll('.carousel-indicator');
+  const carousel = document.querySelector('.carousel');
+  
+  function showSlide(n) {
+    currentSlide = (n + slides.length) % slides.length;
+    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+    
+    // Actualizar indicadores
+    indicators.forEach((indicator, index) => {
+      indicator.classList.toggle('active', index === currentSlide);
+    });
+  }
+  
+  function moveCarousel(n) {
+    showSlide(currentSlide + n);
+  }
+  
+  function goToSlide(n) {
+    showSlide(n);
+  }
+  
+  // Auto-avance del carrusel
+  setInterval(() => {
+    moveCarousel(1);
+  }, 5000);
+  
+  // Contador de visitas mejorado
+  function updateVisitorCounter() {
+    // Intentar obtener el contador del localStorage
+    let count = localStorage.getItem('visitorCount');
+    
+    if (count) {
+      count = parseInt(count) + 1;
+    } else {
+      count = 1;
+    }
+    
+    // Guardar el nuevo contador
+    localStorage.setItem('visitorCount', count);
+    
+    // Mostrar el contador con animación
+    const counterElement = document.getElementById('visitCount');
+    counterElement.textContent = count;
+    
+    // Pequeña animación al actualizar
+    counterElement.style.transform = 'scale(1.2)';
+    setTimeout(() => {
+      counterElement.style.transform = 'scale(1)';
+    }, 300);
+  }
+  
+  // Inicializar
+  document.addEventListener('DOMContentLoaded', function() {
+    updateVisitorCounter();
+  });
+</script>
 </body>
+</html>
